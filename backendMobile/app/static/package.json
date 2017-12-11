@@ -1,0 +1,14 @@
+{
+  "name": "buro-credito-frontend",
+  "version": "0.1.0",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-animate": "^1.5.8",
+    "angular-busy": "^4.1.3",
+    "angular-local-storage": "^0.2.7",
+    "angular-ui-router": "^0.3.1",
+    "bootstrap": "",
+    "jquery": "",
+    "ng-file-upload": "^12.0.4"
+  }
+}

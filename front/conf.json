@@ -1,0 +1,4 @@
+{
+	"port": 3700,
+	"cnnSQL": "Data Source=192.168.20.9;Initial Catalog=FlotillasMIAUTO;user id=sa;password=S0p0rt3"
+} 
