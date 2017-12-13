@@ -1,0 +1,155 @@
+C:\Desarrollo\Flotilla\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+C:\Desarrollo\Flotilla Back\Business\bin\Debug\Business.dll.config
+C:\Desarrollo\Flotilla Back\Business\bin\Debug\Business.dll
+C:\Desarrollo\Flotilla Back\Business\bin\Debug\Business.pdb
+C:\Desarrollo\Flotilla Back\Business\bin\Debug\DataAccess.dll
+C:\Desarrollo\Flotilla Back\Business\bin\Debug\Entity.dll
+C:\Desarrollo\Flotilla Back\Business\bin\Debug\EntityFramework.dll
+C:\Desarrollo\Flotilla Back\Business\bin\Debug\EntityFramework.SqlServer.dll
+C:\Desarrollo\Flotilla Back\Business\bin\Debug\DataAccess.pdb
+C:\Desarrollo\Flotilla Back\Business\bin\Debug\Entity.pdb
+C:\Desarrollo\Flotilla Back\Business\bin\Debug\EntityFramework.xml
+C:\Desarrollo\Flotilla Back\Business\bin\Debug\EntityFramework.SqlServer.xml
+C:\Desarrollo\Flotilla Back\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+C:\Desarrollo\Flotilla Back\Business\obj\Debug\Business.dll
+C:\Desarrollo\Flotilla Back\Business\obj\Debug\Business.pdb
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Business\obj\Debug\Business.dll
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Business\obj\Debug\Business.pdb
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Business\bin\Debug\Business.dll.config
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Business\bin\Debug\Business.dll
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Business\bin\Debug\Business.pdb
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Business\bin\Debug\DataAccess.dll
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Business\bin\Debug\Entity.dll
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Business\bin\Debug\EntityFramework.dll
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Business\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Business\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Business\bin\Debug\System.Web.Http.dll
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Business\bin\Debug\Newtonsoft.Json.dll
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Business\bin\Debug\DataAccess.pdb
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Business\bin\Debug\Entity.pdb
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Business\bin\Debug\EntityFramework.xml
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Business\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Business\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Business\bin\Debug\System.Web.Http.xml
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Business\bin\Debug\Symitar.Api.SoapClient.dll
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Business\bin\Debug\Business.dll.config
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Business\bin\Debug\Business.dll
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Business\bin\Debug\Business.pdb
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Business\bin\Debug\DataAccess.dll
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Business\bin\Debug\Entity.dll
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Business\bin\Debug\EntityFramework.dll
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Business\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Business\bin\Debug\Symitar.Api.SoapClient.dll
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Business\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Business\bin\Debug\System.Web.Http.dll
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Business\bin\Debug\Newtonsoft.Json.dll
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Business\bin\Debug\DataAccess.pdb
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Business\bin\Debug\Entity.pdb
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Business\bin\Debug\EntityFramework.xml
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Business\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Business\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Business\bin\Debug\System.Web.Http.xml
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Business\obj\Debug\Business.dll
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Business\obj\Debug\Business.pdb
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Business\bin\Debug\Business.dll.config
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Business\bin\Debug\Business.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Business\bin\Debug\Business.pdb
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Business\bin\Debug\DataAccess.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Business\bin\Debug\Entity.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Business\bin\Debug\EntityFramework.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Business\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Business\bin\Debug\Symitar.Api.SoapClient.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Business\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Business\bin\Debug\System.Web.Http.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Business\bin\Debug\Newtonsoft.Json.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Business\bin\Debug\DataAccess.pdb
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Business\bin\Debug\Entity.pdb
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Business\bin\Debug\EntityFramework.xml
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Business\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Business\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Business\bin\Debug\System.Web.Http.xml
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Business\obj\Debug\Business.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Business\obj\Debug\Business.pdb
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Business\obj\Debug\Business.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Business\bin\Debug\Business.dll.config
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Business\bin\Debug\Business.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Business\bin\Debug\Business.pdb
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Business\bin\Debug\DataAccess.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Business\bin\Debug\Entity.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Business\bin\Debug\EntityFramework.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Business\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Business\bin\Debug\Symitar.Api.SoapClient.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Business\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Business\bin\Debug\System.Web.Http.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Business\bin\Debug\Newtonsoft.Json.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Business\bin\Debug\DataAccess.pdb
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Business\bin\Debug\Entity.pdb
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Business\bin\Debug\EntityFramework.xml
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Business\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Business\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Business\bin\Debug\System.Web.Http.xml
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Business\obj\Debug\Business.pdb
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Business\bin\Debug\Business.dll.config
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Business\bin\Debug\Business.dll
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Business\bin\Debug\Business.pdb
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Business\bin\Debug\DataAccess.dll
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Business\bin\Debug\Entity.dll
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Business\bin\Debug\EntityFramework.dll
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Business\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Business\bin\Debug\Symitar.Api.SoapClient.dll
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Business\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Business\bin\Debug\System.Web.Http.dll
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Business\bin\Debug\Newtonsoft.Json.dll
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Business\bin\Debug\DataAccess.pdb
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Business\bin\Debug\Entity.pdb
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Business\bin\Debug\EntityFramework.xml
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Business\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Business\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Business\bin\Debug\System.Web.Http.xml
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Business\obj\Debug\Business.dll
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Business\obj\Debug\Business.pdb
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Business\bin\Debug\Business.dll.config
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Business\bin\Debug\Business.dll
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Business\bin\Debug\Business.pdb
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Business\bin\Debug\DataAccess.dll
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Business\bin\Debug\Entity.dll
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Business\bin\Debug\EntityFramework.dll
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Business\bin\Debug\EntityFramework.SqlServer.dll
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Business\bin\Debug\Symitar.Api.SoapClient.dll
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Business\bin\Debug\System.Net.Http.Formatting.dll
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Business\bin\Debug\System.Web.Http.dll
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Business\bin\Debug\Newtonsoft.Json.dll
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Business\bin\Debug\DataAccess.pdb
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Business\bin\Debug\Entity.pdb
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Business\bin\Debug\EntityFramework.xml
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Business\bin\Debug\EntityFramework.SqlServer.xml
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Business\bin\Debug\System.Net.Http.Formatting.xml
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Business\bin\Debug\System.Web.Http.xml
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Business\obj\Debug\Business.dll
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Business\obj\Debug\Business.pdb
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Business\bin\Debug\Business.dll.config
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Business\bin\Debug\Business.dll
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Business\bin\Debug\Business.pdb
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Business\bin\Debug\DataAccess.dll
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Business\bin\Debug\Entity.dll
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Business\bin\Debug\EntityFramework.dll
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Business\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Business\bin\Debug\Symitar.Api.SoapClient.dll
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Business\bin\Debug\Newtonsoft.Json.dll
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Business\bin\Debug\DataAccess.pdb
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Business\bin\Debug\DataAccess.dll.config
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Business\bin\Debug\Entity.pdb
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Business\bin\Debug\EntityFramework.xml
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Business\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Business\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Business\bin\Debug\System.Web.Http.xml
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Business\obj\Debug\Business.csproj.CoreCompileInputs.cache
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Business\obj\Debug\Business.dll
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Business\obj\Debug\Business.pdb

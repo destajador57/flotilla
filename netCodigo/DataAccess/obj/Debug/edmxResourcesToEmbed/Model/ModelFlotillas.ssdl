@@ -1,0 +1,656 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FlotillasTempModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Bitacora">
+    <Key>
+      <PropertyRef Name="idBitacora" />
+    </Key>
+    <Property Name="idBitacora" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idUsuario" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="IdDocumento" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="vin" Type="nvarchar" MaxLength="50" />
+    <Property Name="fecha" Type="datetime" />
+    <Property Name="accion" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Catalogo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idPadre" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="nombre" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="valor" Type="nvarchar" MaxLength="100" />
+    <Property Name="estatus" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CatalogoDocumento">
+    <Key>
+      <PropertyRef Name="idDocumento" />
+    </Key>
+    <Property Name="idDocumento" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="descripcion" Type="nvarchar" MaxLength="50" />
+    <Property Name="abvr" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Documento">
+    <Key>
+      <PropertyRef Name="idDocumento" />
+    </Key>
+    <Property Name="idDocumento" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ruta" Type="nvarchar" MaxLength="50" />
+    <Property Name="vin" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Fase">
+    <Key>
+      <PropertyRef Name="idFase" />
+    </Key>
+    <Property Name="idFase" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="descripcion" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="orden" Type="smallint" Nullable="false" />
+    <Property Name="imagen" Type="nvarchar" MaxLength="50" />
+    <Property Name="alertas" Type="smallint" />
+    <Property Name="estatus" Type="smallint" />
+    <Property Name="activo" Type="smallint" />
+  </EntityType>
+  <EntityType Name="FaseDocumento">
+    <Key>
+      <PropertyRef Name="idFaseDocumento" />
+    </Key>
+    <Property Name="idFaseDocumento" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idFase" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="idDocumento" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="obligatorio" Type="bit" Nullable="false" />
+    <Property Name="orden" Type="smallint" />
+  </EntityType>
+  <EntityType Name="FaseRol">
+    <Key>
+      <PropertyRef Name="idFaseRol" />
+    </Key>
+    <Property Name="idFaseRol" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idRol" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="idFase" Type="numeric" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="Gps">
+    <Key>
+      <PropertyRef Name="idGps" />
+    </Key>
+    <Property Name="idGps" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="vin" Type="nvarchar" MaxLength="50" />
+    <Property Name="numeroGps" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Licitacion">
+    <Key>
+      <PropertyRef Name="idLicitacion" />
+    </Key>
+    <Property Name="idLicitacion" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="fecha" Type="datetime" />
+    <Property Name="descripcion" Type="nvarchar" MaxLength="50" />
+    <Property Name="status" Type="smallint" />
+  </EntityType>
+  <EntityType Name="LicitacionUnidad">
+    <Key>
+      <PropertyRef Name="vin" />
+    </Key>
+    <Property Name="vin" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="factura" Type="nvarchar" MaxLength="50" />
+    <Property Name="idLicitacion" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="tipo" Type="nvarchar" MaxLength="50" />
+    <Property Name="marca" Type="nvarchar" MaxLength="50" />
+    <Property Name="modelo" Type="nvarchar" MaxLength="50" />
+    <Property Name="numeroMotor" Type="nvarchar" MaxLength="50" />
+    <Property Name="color" Type="nvarchar" MaxLength="50" />
+    <Property Name="estatus" Type="nvarchar" MaxLength="25" />
+  </EntityType>
+  <EntityType Name="Parametro">
+    <Key>
+      <PropertyRef Name="idParametro" />
+    </Key>
+    <Property Name="idParametro" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idTipo" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="nombre" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="valor" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="estatus" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PerfilDocumento">
+    <Key>
+      <PropertyRef Name="idPerfilDocumento" />
+    </Key>
+    <Property Name="idPerfilDocumento" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idRol" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="idDocumento" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="consultar" Type="bit" Nullable="false" />
+    <Property Name="cargar" Type="bit" Nullable="false" />
+    <Property Name="descargar" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Permiso">
+    <Key>
+      <PropertyRef Name="idPermiso" />
+    </Key>
+    <Property Name="idPermiso" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idRol" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="idFase" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="idCatalogo" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="permiso" Type="smallint" />
+  </EntityType>
+  <EntityType Name="Rol">
+    <Key>
+      <PropertyRef Name="idRol" />
+    </Key>
+    <Property Name="idRol" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="descripcion" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Sincronizacion">
+    <Key>
+      <PropertyRef Name="idSincronizacion" />
+    </Key>
+    <Property Name="idSincronizacion" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idUsusario" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="fecha" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SincronizacionUnidad">
+    <Key>
+      <PropertyRef Name="idSincronizacionUnidad" />
+    </Key>
+    <Property Name="idSincronizacionUnidad" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idSincronizacion" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="idUnidad" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Unidad">
+    <Key>
+      <PropertyRef Name="idUnidad" />
+    </Key>
+    <Property Name="idUnidad" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="vin" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="idLicitacion" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="economicoInt" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="economicoExt" Type="nvarchar" MaxLength="50" />
+    <Property Name="placa" Type="nvarchar" MaxLength="50" />
+    <Property Name="poliza" Type="nvarchar" MaxLength="50" />
+    <Property Name="tenencia" Type="nvarchar" MaxLength="50" />
+    <Property Name="verificacion" Type="nvarchar" MaxLength="50" />
+    <Property Name="permisoEspecial" Type="nvarchar" MaxLength="50" />
+    <Property Name="domicilioEntrega" Type="nvarchar" MaxLength="200" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UnidadAccesorio">
+    <Key>
+      <PropertyRef Name="idUnidadAccesorio" />
+    </Key>
+    <Property Name="idUnidadAccesorio" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idUnidad" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="idAccesorio" Type="numeric" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="UnidadAccesorioOtro">
+    <Key>
+      <PropertyRef Name="idUnidadAccesorioOtro" />
+    </Key>
+    <Property Name="idUnidadAccesorioOtro" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idUnidad" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="descripcion" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="UnidadPropiedad">
+    <Key>
+      <PropertyRef Name="idUnidad" />
+    </Key>
+    <Property Name="idUnidad" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="vin" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="idDocumento" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="valor" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="idUsuario" />
+    </Key>
+    <Property Name="idUsuario" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idRol" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="nombreCompleto" Type="nvarchar" MaxLength="50" />
+    <Property Name="fechaRegistro" Type="datetime" />
+    <Property Name="email" Type="nvarchar" MaxLength="50" />
+    <Property Name="estatus" Type="smallint" />
+    <Property Name="password" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Valor">
+    <Key>
+      <PropertyRef Name="idValor" />
+    </Key>
+    <Property Name="idValor" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="valor" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <Association Name="FK_Bitacora_LicitacionUnidad">
+    <End Role="LicitacionUnidad" Type="Self.LicitacionUnidad" Multiplicity="0..1" />
+    <End Role="Bitacora" Type="Self.Bitacora" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LicitacionUnidad">
+        <PropertyRef Name="vin" />
+      </Principal>
+      <Dependent Role="Bitacora">
+        <PropertyRef Name="vin" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Bitacora_Usuario">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+    <End Role="Bitacora" Type="Self.Bitacora" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="idUsuario" />
+      </Principal>
+      <Dependent Role="Bitacora">
+        <PropertyRef Name="idUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Documentos_LicitacionUnidad">
+    <End Role="LicitacionUnidad" Type="Self.LicitacionUnidad" Multiplicity="1" />
+    <End Role="Documento" Type="Self.Documento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LicitacionUnidad">
+        <PropertyRef Name="vin" />
+      </Principal>
+      <Dependent Role="Documento">
+        <PropertyRef Name="vin" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FaseDocumento_CatalogoDocumento">
+    <End Role="CatalogoDocumento" Type="Self.CatalogoDocumento" Multiplicity="1" />
+    <End Role="FaseDocumento" Type="Self.FaseDocumento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CatalogoDocumento">
+        <PropertyRef Name="idDocumento" />
+      </Principal>
+      <Dependent Role="FaseDocumento">
+        <PropertyRef Name="idDocumento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FaseDocumento_Fase1">
+    <End Role="Fase" Type="Self.Fase" Multiplicity="1" />
+    <End Role="FaseDocumento" Type="Self.FaseDocumento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Fase">
+        <PropertyRef Name="idFase" />
+      </Principal>
+      <Dependent Role="FaseDocumento">
+        <PropertyRef Name="idFase" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FaseRol_Rol">
+    <End Role="Rol" Type="Self.Rol" Multiplicity="0..1" />
+    <End Role="FaseRol" Type="Self.FaseRol" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rol">
+        <PropertyRef Name="idRol" />
+      </Principal>
+      <Dependent Role="FaseRol">
+        <PropertyRef Name="idRol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Gps_LicitacionUnidad">
+    <End Role="LicitacionUnidad" Type="Self.LicitacionUnidad" Multiplicity="0..1" />
+    <End Role="Gps" Type="Self.Gps" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LicitacionUnidad">
+        <PropertyRef Name="vin" />
+      </Principal>
+      <Dependent Role="Gps">
+        <PropertyRef Name="vin" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LicitacionUnidad_Licitacion">
+    <End Role="Licitacion" Type="Self.Licitacion" Multiplicity="0..1" />
+    <End Role="LicitacionUnidad" Type="Self.LicitacionUnidad" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Licitacion">
+        <PropertyRef Name="idLicitacion" />
+      </Principal>
+      <Dependent Role="LicitacionUnidad">
+        <PropertyRef Name="idLicitacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PerfilDocumento_Usuario">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+    <End Role="PerfilDocumento" Type="Self.PerfilDocumento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="idUsuario" />
+      </Principal>
+      <Dependent Role="PerfilDocumento">
+        <PropertyRef Name="idRol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Permisos_Fase">
+    <End Role="Fase" Type="Self.Fase" Multiplicity="0..1" />
+    <End Role="Permiso" Type="Self.Permiso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Fase">
+        <PropertyRef Name="idFase" />
+      </Principal>
+      <Dependent Role="Permiso">
+        <PropertyRef Name="idFase" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Permisos_Rol">
+    <End Role="Rol" Type="Self.Rol" Multiplicity="0..1" />
+    <End Role="Permiso" Type="Self.Permiso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rol">
+        <PropertyRef Name="idRol" />
+      </Principal>
+      <Dependent Role="Permiso">
+        <PropertyRef Name="idRol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sincronizacion_Usuario">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+    <End Role="Sincronizacion" Type="Self.Sincronizacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="idUsuario" />
+      </Principal>
+      <Dependent Role="Sincronizacion">
+        <PropertyRef Name="idUsusario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SincronizacionUnidad_Sincronizacion">
+    <End Role="Sincronizacion" Type="Self.Sincronizacion" Multiplicity="1" />
+    <End Role="SincronizacionUnidad" Type="Self.SincronizacionUnidad" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sincronizacion">
+        <PropertyRef Name="idSincronizacion" />
+      </Principal>
+      <Dependent Role="SincronizacionUnidad">
+        <PropertyRef Name="idSincronizacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SincronizacionUnidad_UnidadPropiedad">
+    <End Role="UnidadPropiedad" Type="Self.UnidadPropiedad" Multiplicity="1" />
+    <End Role="SincronizacionUnidad" Type="Self.SincronizacionUnidad" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UnidadPropiedad">
+        <PropertyRef Name="idUnidad" />
+      </Principal>
+      <Dependent Role="SincronizacionUnidad">
+        <PropertyRef Name="idUnidad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Unidad_LicitacionUnidad">
+    <End Role="LicitacionUnidad" Type="Self.LicitacionUnidad" Multiplicity="1" />
+    <End Role="Unidad" Type="Self.Unidad" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LicitacionUnidad">
+        <PropertyRef Name="vin" />
+      </Principal>
+      <Dependent Role="Unidad">
+        <PropertyRef Name="vin" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Usuarios_Roles">
+    <End Role="Rol" Type="Self.Rol" Multiplicity="0..1" />
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rol">
+        <PropertyRef Name="idRol" />
+      </Principal>
+      <Dependent Role="Usuario">
+        <PropertyRef Name="idRol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="DEL_ACCESORIO_OTROS_SP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idUnidadAccesorioOtro" Type="numeric" Mode="In" />
+  </Function>
+  <Function Name="DEL_ACCESORIO_SP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idUnidadAccesorio" Type="numeric" Mode="In" />
+  </Function>
+  <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+  <Function Name="INS_ACCESORIO_OTROS_SP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idUnidad" Type="numeric" Mode="In" />
+    <Parameter Name="Descripcion" Type="nvarchar(max)" Mode="In" />
+  </Function>
+  <Function Name="INS_ACCESORIO_SP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idUnidad" Type="numeric" Mode="In" />
+    <Parameter Name="idAccesorio" Type="numeric" Mode="In" />
+  </Function>
+  <Function Name="INS_BITACORA_SP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idUsuario" Type="numeric" Mode="In" />
+    <Parameter Name="vin" Type="nvarchar" Mode="In" />
+    <Parameter Name="accion" Type="nvarchar" Mode="In" />
+    <Parameter Name="idDocumento" Type="numeric" Mode="In" />
+  </Function>
+  <Function Name="INS_SINCRONIZACION_MAESTRO_DETALLE_SP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idUsuario" Type="numeric" Mode="In" />
+    <Parameter Name="vin" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="INS_UNIDAD_PROPIEDAD_SP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="vin" Type="nvarchar" Mode="In" />
+    <Parameter Name="idDocumento" Type="numeric" Mode="In" />
+    <Parameter Name="valor" Type="nvarchar" Mode="In" />
+    <Parameter Name="idUsuario" Type="numeric" Mode="In" />
+  </Function>
+  <Function Name="INS_UNIDAD_SP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="vin" Type="nvarchar" Mode="In" />
+    <Parameter Name="idLicitacion" Type="nvarchar" Mode="In" />
+    <Parameter Name="economicoInt" Type="nvarchar" Mode="In" />
+    <Parameter Name="domicilioEntrega" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="INS_USUARIO_PENDIENTE_SP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idrol" Type="numeric" Mode="In" />
+    <Parameter Name="nombreCompleto" Type="nvarchar" Mode="In" />
+    <Parameter Name="email" Type="nvarchar" Mode="In" />
+    <Parameter Name="password" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="SEL_ACCESORIO_SP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idUnidad" Type="numeric" Mode="In" />
+  </Function>
+  <Function Name="SEL_BITACORA_SP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="vin" Type="nvarchar" Mode="In" />
+    <Parameter Name="idDocumento" Type="numeric" Mode="In" />
+  </Function>
+  <Function Name="SEL_BUSQUEDA_FLOTILLA_APP_SP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="facturavin" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="SEL_BUSQUEDA_FLOTILLA_SP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="factura" Type="nvarchar" Mode="In" />
+    <Parameter Name="vin" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="SEL_DETALLE_SINCRONIZACION_SP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idSincronizacion" Type="numeric" Mode="In" />
+  </Function>
+  <Function Name="SEL_DOCFASE_PERMISO_SP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idRol" Type="numeric" Mode="In" />
+    <Parameter Name="idFase" Type="numeric" Mode="In" />
+  </Function>
+  <Function Name="SEL_FASE_PERMISO_SP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idRol" Type="numeric" Mode="In" />
+  </Function>
+  <Function Name="SEL_LICITACION_APP_SP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SEL_PERMISOS_SP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idRol" Type="numeric" Mode="In" />
+    <Parameter Name="vin" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="SEL_PERMISOS_SP1" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idRol" Type="numeric" Mode="In" />
+    <Parameter Name="vin" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="SEL_ROL_DOCUMENTO_SP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SEL_ROL_TODOS_SP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SEL_SINCRONIZACION_MAESTRO_DETALLE_SP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="fechaInicio" Type="datetime" Mode="In" />
+    <Parameter Name="fechaFinal" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="SEL_UNIDAD_ENCABEZADO_SP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="vin" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="SEL_UNIDAD_PROPIEDAD_SP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="vin" Type="nvarchar" Mode="In" />
+    <Parameter Name="idDocumento" Type="numeric" Mode="In" />
+  </Function>
+  <Function Name="SEL_UNIDAD_SP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="vin" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="SEL_VALIDAR_USUARIO_SP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="usuario" Type="nvarchar" Mode="In" />
+    <Parameter Name="password" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="UPD_ESTATUS_LICITACION_SP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="vin" Type="nvarchar" Mode="In" />
+    <Parameter Name="idLicitacion" Type="numeric" Mode="In" />
+    <Parameter Name="estatus" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="UPD_UNIDAD_PROPIEDAD_SP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="vin" Type="nvarchar" Mode="In" />
+    <Parameter Name="idDocumento" Type="numeric" Mode="In" />
+    <Parameter Name="valor" Type="nvarchar" Mode="In" />
+    <Parameter Name="idUsuario" Type="numeric" Mode="In" />
+  </Function>
+  <Function Name="UPD_UNIDAD_SP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="vin" Type="nvarchar" Mode="In" />
+    <Parameter Name="economicoExt" Type="nvarchar" Mode="In" />
+    <Parameter Name="placa" Type="nvarchar" Mode="In" />
+    <Parameter Name="poliza" Type="nvarchar" Mode="In" />
+    <Parameter Name="tenencia" Type="nvarchar" Mode="In" />
+    <Parameter Name="verificacion" Type="nvarchar" Mode="In" />
+    <Parameter Name="permisoEspecial" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="UPD_USUARIO_ACTIVO_SP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idUsuario" Type="numeric" Mode="In" />
+  </Function>
+  <EntityContainer Name="FlotillasTempModelStoreContainer">
+    <EntitySet Name="Bitacora" EntityType="Self.Bitacora" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Catalogo" EntityType="Self.Catalogo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CatalogoDocumento" EntityType="Self.CatalogoDocumento" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Documento" EntityType="Self.Documento" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Fase" EntityType="Self.Fase" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FaseDocumento" EntityType="Self.FaseDocumento" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FaseRol" EntityType="Self.FaseRol" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Gps" EntityType="Self.Gps" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Licitacion" EntityType="Self.Licitacion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LicitacionUnidad" EntityType="Self.LicitacionUnidad" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Parametro" EntityType="Self.Parametro" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PerfilDocumento" EntityType="Self.PerfilDocumento" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Permiso" EntityType="Self.Permiso" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Rol" EntityType="Self.Rol" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sincronizacion" EntityType="Self.Sincronizacion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SincronizacionUnidad" EntityType="Self.SincronizacionUnidad" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Unidad" EntityType="Self.Unidad" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UnidadAccesorio" EntityType="Self.UnidadAccesorio" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UnidadAccesorioOtro" EntityType="Self.UnidadAccesorioOtro" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UnidadPropiedad" EntityType="Self.UnidadPropiedad" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Valor" EntityType="Self.Valor" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Bitacora_LicitacionUnidad" Association="Self.FK_Bitacora_LicitacionUnidad">
+      <End Role="LicitacionUnidad" EntitySet="LicitacionUnidad" />
+      <End Role="Bitacora" EntitySet="Bitacora" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Bitacora_Usuario" Association="Self.FK_Bitacora_Usuario">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Bitacora" EntitySet="Bitacora" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Documentos_LicitacionUnidad" Association="Self.FK_Documentos_LicitacionUnidad">
+      <End Role="LicitacionUnidad" EntitySet="LicitacionUnidad" />
+      <End Role="Documento" EntitySet="Documento" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FaseDocumento_CatalogoDocumento" Association="Self.FK_FaseDocumento_CatalogoDocumento">
+      <End Role="CatalogoDocumento" EntitySet="CatalogoDocumento" />
+      <End Role="FaseDocumento" EntitySet="FaseDocumento" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FaseDocumento_Fase1" Association="Self.FK_FaseDocumento_Fase1">
+      <End Role="Fase" EntitySet="Fase" />
+      <End Role="FaseDocumento" EntitySet="FaseDocumento" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FaseRol_Rol" Association="Self.FK_FaseRol_Rol">
+      <End Role="Rol" EntitySet="Rol" />
+      <End Role="FaseRol" EntitySet="FaseRol" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Gps_LicitacionUnidad" Association="Self.FK_Gps_LicitacionUnidad">
+      <End Role="LicitacionUnidad" EntitySet="LicitacionUnidad" />
+      <End Role="Gps" EntitySet="Gps" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LicitacionUnidad_Licitacion" Association="Self.FK_LicitacionUnidad_Licitacion">
+      <End Role="Licitacion" EntitySet="Licitacion" />
+      <End Role="LicitacionUnidad" EntitySet="LicitacionUnidad" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PerfilDocumento_Usuario" Association="Self.FK_PerfilDocumento_Usuario">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="PerfilDocumento" EntitySet="PerfilDocumento" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Permisos_Fase" Association="Self.FK_Permisos_Fase">
+      <End Role="Fase" EntitySet="Fase" />
+      <End Role="Permiso" EntitySet="Permiso" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Permisos_Rol" Association="Self.FK_Permisos_Rol">
+      <End Role="Rol" EntitySet="Rol" />
+      <End Role="Permiso" EntitySet="Permiso" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sincronizacion_Usuario" Association="Self.FK_Sincronizacion_Usuario">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Sincronizacion" EntitySet="Sincronizacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SincronizacionUnidad_Sincronizacion" Association="Self.FK_SincronizacionUnidad_Sincronizacion">
+      <End Role="Sincronizacion" EntitySet="Sincronizacion" />
+      <End Role="SincronizacionUnidad" EntitySet="SincronizacionUnidad" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SincronizacionUnidad_UnidadPropiedad" Association="Self.FK_SincronizacionUnidad_UnidadPropiedad">
+      <End Role="UnidadPropiedad" EntitySet="UnidadPropiedad" />
+      <End Role="SincronizacionUnidad" EntitySet="SincronizacionUnidad" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Unidad_LicitacionUnidad" Association="Self.FK_Unidad_LicitacionUnidad">
+      <End Role="LicitacionUnidad" EntitySet="LicitacionUnidad" />
+      <End Role="Unidad" EntitySet="Unidad" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Usuarios_Roles" Association="Self.FK_Usuarios_Roles">
+      <End Role="Rol" EntitySet="Rol" />
+      <End Role="Usuario" EntitySet="Usuario" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,44 @@
+C:\Desarrollo\Flotilla\Entity\bin\Debug\Entity.dll
+C:\Desarrollo\Flotilla\Entity\bin\Debug\Entity.pdb
+C:\Desarrollo\Flotilla\Entity\obj\Debug\Entity.dll
+C:\Desarrollo\Flotilla\Entity\obj\Debug\Entity.pdb
+C:\Desarrollo\Flotilla\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
+C:\Desarrollo\Flotilla Back\Entity\bin\Debug\Entity.dll
+C:\Desarrollo\Flotilla Back\Entity\bin\Debug\Entity.pdb
+C:\Desarrollo\Flotilla Back\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
+C:\Desarrollo\Flotilla Back\Entity\obj\Debug\Entity.dll
+C:\Desarrollo\Flotilla Back\Entity\obj\Debug\Entity.pdb
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Entity\bin\Debug\Entity.dll
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Entity\bin\Debug\Entity.pdb
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Entity\obj\Debug\Entity.dll
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Entity\obj\Debug\Entity.pdb
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Entity\bin\Debug\Entity.dll
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Entity\bin\Debug\Entity.pdb
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Entity\obj\Debug\Entity.dll
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Entity\obj\Debug\Entity.pdb
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Entity\bin\Debug\Entity.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Entity\bin\Debug\Entity.pdb
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Entity\obj\Debug\Entity.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Entity\obj\Debug\Entity.pdb
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Entity\bin\Debug\Entity.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Entity\bin\Debug\Entity.pdb
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Entity\obj\Debug\Entity.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Entity\obj\Debug\Entity.pdb
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Entity\bin\Debug\Entity.dll
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Entity\bin\Debug\Entity.pdb
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Entity\obj\Debug\Entity.dll
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Entity\obj\Debug\Entity.pdb
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Entity\bin\Debug\Entity.dll
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Entity\bin\Debug\Entity.pdb
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Entity\obj\Debug\Entity.dll
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Entity\obj\Debug\Entity.pdb
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Entity\bin\Debug\Entity.dll
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Entity\bin\Debug\Entity.pdb
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Entity\obj\Debug\Entity.csproj.CoreCompileInputs.cache
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Entity\obj\Debug\Entity.dll
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Entity\obj\Debug\Entity.pdb

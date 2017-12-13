@@ -1,0 +1,840 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FlotillasTempModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Bitacora">
+    <Key>
+      <PropertyRef Name="idBitacora" />
+    </Key>
+    <Property Name="idBitacora" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idUsuario" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IdDocumento" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="vin" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="fecha" Type="DateTime" Precision="3" />
+    <Property Name="accion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="LicitacionUnidad" Relationship="Self.FK_Bitacora_LicitacionUnidad" FromRole="Bitacora" ToRole="LicitacionUnidad" />
+    <NavigationProperty Name="Usuario" Relationship="Self.FK_Bitacora_Usuario" FromRole="Bitacora" ToRole="Usuario" />
+  </EntityType>
+  <EntityType Name="Catalogo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idPadre" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="valor" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="estatus" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CatalogoDocumento">
+    <Key>
+      <PropertyRef Name="idDocumento" />
+    </Key>
+    <Property Name="idDocumento" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="abvr" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="FaseDocumento" Relationship="Self.FK_FaseDocumento_CatalogoDocumento" FromRole="CatalogoDocumento" ToRole="FaseDocumento" />
+  </EntityType>
+  <EntityType Name="Documento">
+    <Key>
+      <PropertyRef Name="idDocumento" />
+    </Key>
+    <Property Name="idDocumento" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ruta" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="vin" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="LicitacionUnidad" Relationship="Self.FK_Documentos_LicitacionUnidad" FromRole="Documento" ToRole="LicitacionUnidad" />
+  </EntityType>
+  <EntityType Name="Fase">
+    <Key>
+      <PropertyRef Name="idFase" />
+    </Key>
+    <Property Name="idFase" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="orden" Type="Int16" Nullable="false" />
+    <Property Name="imagen" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="alertas" Type="Int16" />
+    <Property Name="estatus" Type="Int16" />
+    <Property Name="activo" Type="Int16" />
+    <NavigationProperty Name="FaseDocumento" Relationship="Self.FK_FaseDocumento_Fase1" FromRole="Fase" ToRole="FaseDocumento" />
+    <NavigationProperty Name="Permiso" Relationship="Self.FK_Permisos_Fase" FromRole="Fase" ToRole="Permiso" />
+  </EntityType>
+  <EntityType Name="FaseDocumento">
+    <Key>
+      <PropertyRef Name="idFaseDocumento" />
+    </Key>
+    <Property Name="idFaseDocumento" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idFase" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="idDocumento" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="obligatorio" Type="Boolean" Nullable="false" />
+    <Property Name="orden" Type="Int16" />
+    <NavigationProperty Name="CatalogoDocumento" Relationship="Self.FK_FaseDocumento_CatalogoDocumento" FromRole="FaseDocumento" ToRole="CatalogoDocumento" />
+    <NavigationProperty Name="Fase" Relationship="Self.FK_FaseDocumento_Fase1" FromRole="FaseDocumento" ToRole="Fase" />
+  </EntityType>
+  <EntityType Name="FaseRol">
+    <Key>
+      <PropertyRef Name="idFaseRol" />
+    </Key>
+    <Property Name="idFaseRol" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idRol" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="idFase" Type="Decimal" Precision="18" Scale="0" />
+    <NavigationProperty Name="Rol" Relationship="Self.FK_FaseRol_Rol" FromRole="FaseRol" ToRole="Rol" />
+  </EntityType>
+  <EntityType Name="Gps">
+    <Key>
+      <PropertyRef Name="idGps" />
+    </Key>
+    <Property Name="idGps" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="vin" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="numeroGps" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="LicitacionUnidad" Relationship="Self.FK_Gps_LicitacionUnidad" FromRole="Gps" ToRole="LicitacionUnidad" />
+  </EntityType>
+  <EntityType Name="Licitacion">
+    <Key>
+      <PropertyRef Name="idLicitacion" />
+    </Key>
+    <Property Name="idLicitacion" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fecha" Type="DateTime" Precision="3" />
+    <Property Name="descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="status" Type="Int16" />
+    <NavigationProperty Name="LicitacionUnidad" Relationship="Self.FK_LicitacionUnidad_Licitacion" FromRole="Licitacion" ToRole="LicitacionUnidad" />
+  </EntityType>
+  <EntityType Name="LicitacionUnidad">
+    <Key>
+      <PropertyRef Name="vin" />
+    </Key>
+    <Property Name="vin" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="factura" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="idLicitacion" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="tipo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="marca" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="modelo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="numeroMotor" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="color" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="estatus" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Bitacora" Relationship="Self.FK_Bitacora_LicitacionUnidad" FromRole="LicitacionUnidad" ToRole="Bitacora" />
+    <NavigationProperty Name="Documento" Relationship="Self.FK_Documentos_LicitacionUnidad" FromRole="LicitacionUnidad" ToRole="Documento" />
+    <NavigationProperty Name="Gps" Relationship="Self.FK_Gps_LicitacionUnidad" FromRole="LicitacionUnidad" ToRole="Gps" />
+    <NavigationProperty Name="Licitacion" Relationship="Self.FK_LicitacionUnidad_Licitacion" FromRole="LicitacionUnidad" ToRole="Licitacion" />
+    <NavigationProperty Name="Unidad" Relationship="Self.FK_Unidad_LicitacionUnidad" FromRole="LicitacionUnidad" ToRole="Unidad" />
+  </EntityType>
+  <EntityType Name="Parametro">
+    <Key>
+      <PropertyRef Name="idParametro" />
+    </Key>
+    <Property Name="idParametro" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idTipo" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="valor" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="estatus" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PerfilDocumento">
+    <Key>
+      <PropertyRef Name="idPerfilDocumento" />
+    </Key>
+    <Property Name="idPerfilDocumento" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idRol" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="idDocumento" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="consultar" Type="Boolean" Nullable="false" />
+    <Property Name="cargar" Type="Boolean" Nullable="false" />
+    <Property Name="descargar" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Usuario" Relationship="Self.FK_PerfilDocumento_Usuario" FromRole="PerfilDocumento" ToRole="Usuario" />
+  </EntityType>
+  <EntityType Name="Permiso">
+    <Key>
+      <PropertyRef Name="idPermiso" />
+    </Key>
+    <Property Name="idPermiso" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idRol" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="idFase" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="idCatalogo" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="permiso1" Type="Int16" />
+    <NavigationProperty Name="Fase" Relationship="Self.FK_Permisos_Fase" FromRole="Permiso" ToRole="Fase" />
+    <NavigationProperty Name="Rol" Relationship="Self.FK_Permisos_Rol" FromRole="Permiso" ToRole="Rol" />
+  </EntityType>
+  <EntityType Name="Rol">
+    <Key>
+      <PropertyRef Name="idRol" />
+    </Key>
+    <Property Name="idRol" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="FaseRol" Relationship="Self.FK_FaseRol_Rol" FromRole="Rol" ToRole="FaseRol" />
+    <NavigationProperty Name="Permiso" Relationship="Self.FK_Permisos_Rol" FromRole="Rol" ToRole="Permiso" />
+    <NavigationProperty Name="Usuario" Relationship="Self.FK_Usuarios_Roles" FromRole="Rol" ToRole="Usuario" />
+  </EntityType>
+  <EntityType Name="Sincronizacion">
+    <Key>
+      <PropertyRef Name="idSincronizacion" />
+    </Key>
+    <Property Name="idSincronizacion" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idUsusario" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="fecha" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Usuario" Relationship="Self.FK_Sincronizacion_Usuario" FromRole="Sincronizacion" ToRole="Usuario" />
+    <NavigationProperty Name="SincronizacionUnidad" Relationship="Self.FK_SincronizacionUnidad_Sincronizacion" FromRole="Sincronizacion" ToRole="SincronizacionUnidad" />
+  </EntityType>
+  <EntityType Name="SincronizacionUnidad">
+    <Key>
+      <PropertyRef Name="idSincronizacionUnidad" />
+    </Key>
+    <Property Name="idSincronizacionUnidad" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idSincronizacion" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="idUnidad" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <NavigationProperty Name="Sincronizacion" Relationship="Self.FK_SincronizacionUnidad_Sincronizacion" FromRole="SincronizacionUnidad" ToRole="Sincronizacion" />
+    <NavigationProperty Name="UnidadPropiedad" Relationship="Self.FK_SincronizacionUnidad_UnidadPropiedad" FromRole="SincronizacionUnidad" ToRole="UnidadPropiedad" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Unidad">
+    <Key>
+      <PropertyRef Name="idUnidad" />
+    </Key>
+    <Property Name="idUnidad" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="vin" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="idLicitacion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="economicoInt" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="economicoExt" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="placa" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="poliza" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="tenencia" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="verificacion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="permisoEspecial" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="domicilioEntrega" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="LicitacionUnidad" Relationship="Self.FK_Unidad_LicitacionUnidad" FromRole="Unidad" ToRole="LicitacionUnidad" />
+  </EntityType>
+  <EntityType Name="UnidadAccesorio">
+    <Key>
+      <PropertyRef Name="idUnidadAccesorio" />
+    </Key>
+    <Property Name="idUnidadAccesorio" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idUnidad" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="idAccesorio" Type="Decimal" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="UnidadAccesorioOtro">
+    <Key>
+      <PropertyRef Name="idUnidadAccesorioOtro" />
+    </Key>
+    <Property Name="idUnidadAccesorioOtro" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idUnidad" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="UnidadPropiedad">
+    <Key>
+      <PropertyRef Name="idUnidad" />
+    </Key>
+    <Property Name="idUnidad" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="vin" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="idDocumento" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="valor" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="SincronizacionUnidad" Relationship="Self.FK_SincronizacionUnidad_UnidadPropiedad" FromRole="UnidadPropiedad" ToRole="SincronizacionUnidad" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="idUsuario" />
+    </Key>
+    <Property Name="idUsuario" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idRol" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="nombreCompleto" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="fechaRegistro" Type="DateTime" Precision="3" />
+    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="estatus" Type="Int16" />
+    <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Bitacora" Relationship="Self.FK_Bitacora_Usuario" FromRole="Usuario" ToRole="Bitacora" />
+    <NavigationProperty Name="PerfilDocumento" Relationship="Self.FK_PerfilDocumento_Usuario" FromRole="Usuario" ToRole="PerfilDocumento" />
+    <NavigationProperty Name="Rol" Relationship="Self.FK_Usuarios_Roles" FromRole="Usuario" ToRole="Rol" />
+    <NavigationProperty Name="Sincronizacion" Relationship="Self.FK_Sincronizacion_Usuario" FromRole="Usuario" ToRole="Sincronizacion" />
+  </EntityType>
+  <EntityType Name="Valor">
+    <Key>
+      <PropertyRef Name="idValor" />
+    </Key>
+    <Property Name="idValor" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="valor1" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK_Bitacora_LicitacionUnidad">
+    <End Role="LicitacionUnidad" Type="Self.LicitacionUnidad" Multiplicity="0..1" />
+    <End Role="Bitacora" Type="Self.Bitacora" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LicitacionUnidad">
+        <PropertyRef Name="vin" />
+      </Principal>
+      <Dependent Role="Bitacora">
+        <PropertyRef Name="vin" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Bitacora_Usuario">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+    <End Role="Bitacora" Type="Self.Bitacora" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="idUsuario" />
+      </Principal>
+      <Dependent Role="Bitacora">
+        <PropertyRef Name="idUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FaseDocumento_CatalogoDocumento">
+    <End Role="CatalogoDocumento" Type="Self.CatalogoDocumento" Multiplicity="1" />
+    <End Role="FaseDocumento" Type="Self.FaseDocumento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CatalogoDocumento">
+        <PropertyRef Name="idDocumento" />
+      </Principal>
+      <Dependent Role="FaseDocumento">
+        <PropertyRef Name="idDocumento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Documentos_LicitacionUnidad">
+    <End Role="LicitacionUnidad" Type="Self.LicitacionUnidad" Multiplicity="1" />
+    <End Role="Documento" Type="Self.Documento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LicitacionUnidad">
+        <PropertyRef Name="vin" />
+      </Principal>
+      <Dependent Role="Documento">
+        <PropertyRef Name="vin" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FaseDocumento_Fase1">
+    <End Role="Fase" Type="Self.Fase" Multiplicity="1" />
+    <End Role="FaseDocumento" Type="Self.FaseDocumento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Fase">
+        <PropertyRef Name="idFase" />
+      </Principal>
+      <Dependent Role="FaseDocumento">
+        <PropertyRef Name="idFase" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Permisos_Fase">
+    <End Role="Fase" Type="Self.Fase" Multiplicity="0..1" />
+    <End Role="Permiso" Type="Self.Permiso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Fase">
+        <PropertyRef Name="idFase" />
+      </Principal>
+      <Dependent Role="Permiso">
+        <PropertyRef Name="idFase" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FaseRol_Rol">
+    <End Role="Rol" Type="Self.Rol" Multiplicity="0..1" />
+    <End Role="FaseRol" Type="Self.FaseRol" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rol">
+        <PropertyRef Name="idRol" />
+      </Principal>
+      <Dependent Role="FaseRol">
+        <PropertyRef Name="idRol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Gps_LicitacionUnidad">
+    <End Role="LicitacionUnidad" Type="Self.LicitacionUnidad" Multiplicity="0..1" />
+    <End Role="Gps" Type="Self.Gps" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LicitacionUnidad">
+        <PropertyRef Name="vin" />
+      </Principal>
+      <Dependent Role="Gps">
+        <PropertyRef Name="vin" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LicitacionUnidad_Licitacion">
+    <End Role="Licitacion" Type="Self.Licitacion" Multiplicity="0..1" />
+    <End Role="LicitacionUnidad" Type="Self.LicitacionUnidad" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Licitacion">
+        <PropertyRef Name="idLicitacion" />
+      </Principal>
+      <Dependent Role="LicitacionUnidad">
+        <PropertyRef Name="idLicitacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Unidad_LicitacionUnidad">
+    <End Role="LicitacionUnidad" Type="Self.LicitacionUnidad" Multiplicity="1" />
+    <End Role="Unidad" Type="Self.Unidad" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LicitacionUnidad">
+        <PropertyRef Name="vin" />
+      </Principal>
+      <Dependent Role="Unidad">
+        <PropertyRef Name="vin" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PerfilDocumento_Usuario">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+    <End Role="PerfilDocumento" Type="Self.PerfilDocumento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="idUsuario" />
+      </Principal>
+      <Dependent Role="PerfilDocumento">
+        <PropertyRef Name="idRol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Permisos_Rol">
+    <End Role="Rol" Type="Self.Rol" Multiplicity="0..1" />
+    <End Role="Permiso" Type="Self.Permiso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rol">
+        <PropertyRef Name="idRol" />
+      </Principal>
+      <Dependent Role="Permiso">
+        <PropertyRef Name="idRol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Usuarios_Roles">
+    <End Role="Rol" Type="Self.Rol" Multiplicity="0..1" />
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rol">
+        <PropertyRef Name="idRol" />
+      </Principal>
+      <Dependent Role="Usuario">
+        <PropertyRef Name="idRol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sincronizacion_Usuario">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+    <End Role="Sincronizacion" Type="Self.Sincronizacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="idUsuario" />
+      </Principal>
+      <Dependent Role="Sincronizacion">
+        <PropertyRef Name="idUsusario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SincronizacionUnidad_Sincronizacion">
+    <End Role="Sincronizacion" Type="Self.Sincronizacion" Multiplicity="1" />
+    <End Role="SincronizacionUnidad" Type="Self.SincronizacionUnidad" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sincronizacion">
+        <PropertyRef Name="idSincronizacion" />
+      </Principal>
+      <Dependent Role="SincronizacionUnidad">
+        <PropertyRef Name="idSincronizacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SincronizacionUnidad_UnidadPropiedad">
+    <End Role="UnidadPropiedad" Type="Self.UnidadPropiedad" Multiplicity="1" />
+    <End Role="SincronizacionUnidad" Type="Self.SincronizacionUnidad" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UnidadPropiedad">
+        <PropertyRef Name="idUnidad" />
+      </Principal>
+      <Dependent Role="SincronizacionUnidad">
+        <PropertyRef Name="idUnidad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="FlotillasEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Bitacora" EntityType="Self.Bitacora" />
+    <EntitySet Name="Catalogo" EntityType="Self.Catalogo" />
+    <EntitySet Name="CatalogoDocumento" EntityType="Self.CatalogoDocumento" />
+    <EntitySet Name="Documento" EntityType="Self.Documento" />
+    <EntitySet Name="Fase" EntityType="Self.Fase" />
+    <EntitySet Name="FaseDocumento" EntityType="Self.FaseDocumento" />
+    <EntitySet Name="FaseRol" EntityType="Self.FaseRol" />
+    <EntitySet Name="Gps" EntityType="Self.Gps" />
+    <EntitySet Name="Licitacion" EntityType="Self.Licitacion" />
+    <EntitySet Name="LicitacionUnidad" EntityType="Self.LicitacionUnidad" />
+    <EntitySet Name="Parametro" EntityType="Self.Parametro" />
+    <EntitySet Name="PerfilDocumento" EntityType="Self.PerfilDocumento" />
+    <EntitySet Name="Permiso" EntityType="Self.Permiso" />
+    <EntitySet Name="Rol" EntityType="Self.Rol" />
+    <EntitySet Name="Sincronizacion" EntityType="Self.Sincronizacion" />
+    <EntitySet Name="SincronizacionUnidad" EntityType="Self.SincronizacionUnidad" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="Unidad" EntityType="Self.Unidad" />
+    <EntitySet Name="UnidadAccesorio" EntityType="Self.UnidadAccesorio" />
+    <EntitySet Name="UnidadAccesorioOtro" EntityType="Self.UnidadAccesorioOtro" />
+    <EntitySet Name="UnidadPropiedad" EntityType="Self.UnidadPropiedad" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" />
+    <EntitySet Name="Valor" EntityType="Self.Valor" />
+    <AssociationSet Name="FK_Bitacora_LicitacionUnidad" Association="Self.FK_Bitacora_LicitacionUnidad">
+      <End Role="LicitacionUnidad" EntitySet="LicitacionUnidad" />
+      <End Role="Bitacora" EntitySet="Bitacora" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Bitacora_Usuario" Association="Self.FK_Bitacora_Usuario">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Bitacora" EntitySet="Bitacora" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FaseDocumento_CatalogoDocumento" Association="Self.FK_FaseDocumento_CatalogoDocumento">
+      <End Role="CatalogoDocumento" EntitySet="CatalogoDocumento" />
+      <End Role="FaseDocumento" EntitySet="FaseDocumento" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Documentos_LicitacionUnidad" Association="Self.FK_Documentos_LicitacionUnidad">
+      <End Role="LicitacionUnidad" EntitySet="LicitacionUnidad" />
+      <End Role="Documento" EntitySet="Documento" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FaseDocumento_Fase1" Association="Self.FK_FaseDocumento_Fase1">
+      <End Role="Fase" EntitySet="Fase" />
+      <End Role="FaseDocumento" EntitySet="FaseDocumento" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Permisos_Fase" Association="Self.FK_Permisos_Fase">
+      <End Role="Fase" EntitySet="Fase" />
+      <End Role="Permiso" EntitySet="Permiso" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FaseRol_Rol" Association="Self.FK_FaseRol_Rol">
+      <End Role="Rol" EntitySet="Rol" />
+      <End Role="FaseRol" EntitySet="FaseRol" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Gps_LicitacionUnidad" Association="Self.FK_Gps_LicitacionUnidad">
+      <End Role="LicitacionUnidad" EntitySet="LicitacionUnidad" />
+      <End Role="Gps" EntitySet="Gps" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LicitacionUnidad_Licitacion" Association="Self.FK_LicitacionUnidad_Licitacion">
+      <End Role="Licitacion" EntitySet="Licitacion" />
+      <End Role="LicitacionUnidad" EntitySet="LicitacionUnidad" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Unidad_LicitacionUnidad" Association="Self.FK_Unidad_LicitacionUnidad">
+      <End Role="LicitacionUnidad" EntitySet="LicitacionUnidad" />
+      <End Role="Unidad" EntitySet="Unidad" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PerfilDocumento_Usuario" Association="Self.FK_PerfilDocumento_Usuario">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="PerfilDocumento" EntitySet="PerfilDocumento" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Permisos_Rol" Association="Self.FK_Permisos_Rol">
+      <End Role="Rol" EntitySet="Rol" />
+      <End Role="Permiso" EntitySet="Permiso" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Usuarios_Roles" Association="Self.FK_Usuarios_Roles">
+      <End Role="Rol" EntitySet="Rol" />
+      <End Role="Usuario" EntitySet="Usuario" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sincronizacion_Usuario" Association="Self.FK_Sincronizacion_Usuario">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Sincronizacion" EntitySet="Sincronizacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SincronizacionUnidad_Sincronizacion" Association="Self.FK_SincronizacionUnidad_Sincronizacion">
+      <End Role="Sincronizacion" EntitySet="Sincronizacion" />
+      <End Role="SincronizacionUnidad" EntitySet="SincronizacionUnidad" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SincronizacionUnidad_UnidadPropiedad" Association="Self.FK_SincronizacionUnidad_UnidadPropiedad">
+      <End Role="UnidadPropiedad" EntitySet="UnidadPropiedad" />
+      <End Role="SincronizacionUnidad" EntitySet="SincronizacionUnidad" />
+    </AssociationSet>
+    <FunctionImport Name="DEL_ACCESORIO_OTROS_SP" ReturnType="Collection(Decimal)">
+      <Parameter Name="idUnidadAccesorioOtro" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="DEL_ACCESORIO_SP" ReturnType="Collection(Decimal)">
+      <Parameter Name="idUnidadAccesorio" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="INS_ACCESORIO_OTROS_SP" ReturnType="Collection(Decimal)">
+      <Parameter Name="idUnidad" Mode="In" Type="Decimal" />
+      <Parameter Name="Descripcion" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="INS_ACCESORIO_SP" ReturnType="Collection(Decimal)">
+      <Parameter Name="idUnidad" Mode="In" Type="Decimal" />
+      <Parameter Name="idAccesorio" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="INS_BITACORA_SP">
+      <Parameter Name="idUsuario" Mode="In" Type="Decimal" />
+      <Parameter Name="vin" Mode="In" Type="String" />
+      <Parameter Name="accion" Mode="In" Type="String" />
+      <Parameter Name="idDocumento" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="INS_SINCRONIZACION_MAESTRO_DETALLE_SP">
+      <Parameter Name="idUsuario" Mode="In" Type="Decimal" />
+      <Parameter Name="vin" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="INS_UNIDAD_PROPIEDAD_SP" ReturnType="Collection(String)">
+      <Parameter Name="vin" Mode="In" Type="String" />
+      <Parameter Name="idDocumento" Mode="In" Type="Decimal" />
+      <Parameter Name="valor" Mode="In" Type="String" />
+      <Parameter Name="idUsuario" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="INS_UNIDAD_SP" ReturnType="Collection(Decimal)">
+      <Parameter Name="vin" Mode="In" Type="String" />
+      <Parameter Name="idLicitacion" Mode="In" Type="String" />
+      <Parameter Name="economicoInt" Mode="In" Type="String" />
+      <Parameter Name="domicilioEntrega" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="INS_USUARIO_PENDIENTE_SP" ReturnType="Collection(Decimal)">
+      <Parameter Name="idrol" Mode="In" Type="Decimal" />
+      <Parameter Name="nombreCompleto" Mode="In" Type="String" />
+      <Parameter Name="email" Mode="In" Type="String" />
+      <Parameter Name="password" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SEL_ACCESORIO_SP" ReturnType="Collection(FlotillasTempModel.SEL_ACCESORIO_SP_Result)">
+      <Parameter Name="idUnidad" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="SEL_BITACORA_SP" ReturnType="Collection(FlotillasTempModel.SEL_BITACORA_SP_Result)">
+      <Parameter Name="vin" Mode="In" Type="String" />
+      <Parameter Name="idDocumento" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="SEL_BUSQUEDA_FLOTILLA_APP_SP" ReturnType="Collection(FlotillasTempModel.SEL_BUSQUEDA_FLOTILLA_APP_SP_Result)">
+      <Parameter Name="facturavin" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SEL_BUSQUEDA_FLOTILLA_SP" ReturnType="Collection(FlotillasTempModel.SEL_BUSQUEDA_FLOTILLA_SP_Result)">
+      <Parameter Name="factura" Mode="In" Type="String" />
+      <Parameter Name="vin" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SEL_DETALLE_SINCRONIZACION_SP" ReturnType="Collection(FlotillasTempModel.SEL_DETALLE_SINCRONIZACION_SP_Result)">
+      <Parameter Name="idSincronizacion" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="SEL_DOCFASE_PERMISO_SP" ReturnType="Collection(FlotillasTempModel.SEL_DOCFASE_PERMISO_SP_Result)">
+      <Parameter Name="idRol" Mode="In" Type="Decimal" />
+      <Parameter Name="idFase" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="SEL_FASE_PERMISO_SP" ReturnType="Collection(FlotillasTempModel.SEL_FASE_PERMISO_SP_Result)">
+      <Parameter Name="idRol" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="SEL_LICITACION_APP_SP" ReturnType="Collection(FlotillasTempModel.SEL_LICITACION_APP_SP_Result)" />
+    <FunctionImport Name="SEL_PERMISOS_SP" ReturnType="Collection(FlotillasTempModel.SEL_PERMISOS_SP_Result)">
+      <Parameter Name="idRol" Mode="In" Type="Decimal" />
+      <Parameter Name="vin" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SEL_PERMISOS_SP1" ReturnType="Collection(FlotillasTempModel.SEL_PERMISOS_SP1_Result)">
+      <Parameter Name="idRol" Mode="In" Type="Decimal" />
+      <Parameter Name="vin" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SEL_ROL_DOCUMENTO_SP" ReturnType="Collection(FlotillasTempModel.SEL_ROL_DOCUMENTO_SP_Result)" />
+    <FunctionImport Name="SEL_ROL_TODOS_SP" ReturnType="Collection(FlotillasTempModel.SEL_ROL_TODOS_SP_Result)" />
+    <FunctionImport Name="SEL_SINCRONIZACION_MAESTRO_DETALLE_SP" ReturnType="Collection(FlotillasTempModel.SEL_SINCRONIZACION_MAESTRO_DETALLE_SP_Result)">
+      <Parameter Name="fechaInicio" Mode="In" Type="DateTime" />
+      <Parameter Name="fechaFinal" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="SEL_UNIDAD_ENCABEZADO_SP" ReturnType="Collection(FlotillasTempModel.SEL_UNIDAD_ENCABEZADO_SP_Result)">
+      <Parameter Name="vin" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SEL_UNIDAD_PROPIEDAD_SP" ReturnType="Collection(Int32)">
+      <Parameter Name="vin" Mode="In" Type="String" />
+      <Parameter Name="idDocumento" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="SEL_UNIDAD_SP" ReturnType="Collection(FlotillasTempModel.SEL_UNIDAD_SP_Result)">
+      <Parameter Name="vin" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SEL_VALIDAR_USUARIO_SP" ReturnType="Collection(FlotillasTempModel.SEL_VALIDAR_USUARIO_SP_Result)">
+      <Parameter Name="usuario" Mode="In" Type="String" />
+      <Parameter Name="password" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(FlotillasTempModel.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(FlotillasTempModel.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+    <FunctionImport Name="UPD_ESTATUS_LICITACION_SP">
+      <Parameter Name="vin" Mode="In" Type="String" />
+      <Parameter Name="idLicitacion" Mode="In" Type="Decimal" />
+      <Parameter Name="estatus" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="UPD_UNIDAD_PROPIEDAD_SP" ReturnType="Collection(String)">
+      <Parameter Name="vin" Mode="In" Type="String" />
+      <Parameter Name="idDocumento" Mode="In" Type="Decimal" />
+      <Parameter Name="valor" Mode="In" Type="String" />
+      <Parameter Name="idUsuario" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="UPD_UNIDAD_SP">
+      <Parameter Name="vin" Mode="In" Type="String" />
+      <Parameter Name="economicoExt" Mode="In" Type="String" />
+      <Parameter Name="placa" Mode="In" Type="String" />
+      <Parameter Name="poliza" Mode="In" Type="String" />
+      <Parameter Name="tenencia" Mode="In" Type="String" />
+      <Parameter Name="verificacion" Mode="In" Type="String" />
+      <Parameter Name="permisoEspecial" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="UPD_USUARIO_ACTIVO_SP" ReturnType="Collection(Decimal)">
+      <Parameter Name="idUsuario" Mode="In" Type="Decimal" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="SEL_ACCESORIO_SP_Result">
+    <Property Type="Decimal" Name="Id" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="idUnidad" Nullable="true" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="idAccesorio" Nullable="true" Precision="18" Scale="0" />
+    <Property Type="String" Name="descripcion" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="SEL_BITACORA_SP_Result">
+    <Property Type="Decimal" Name="idBitacora" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="idUsuario" Nullable="true" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="idDocumento" Nullable="true" Precision="18" Scale="0" />
+    <Property Type="String" Name="vin" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="fecha" Nullable="true" Precision="23" />
+    <Property Type="String" Name="accion" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="SEL_BUSQUEDA_FLOTILLA_APP_SP_Result">
+    <Property Type="Decimal" Name="idLicitacion" Nullable="true" Precision="18" Scale="0" />
+    <Property Type="String" Name="descripcion" Nullable="true" MaxLength="209" />
+    <Property Type="String" Name="estatus" Nullable="true" MaxLength="25" />
+    <Property Type="String" Name="vin" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="factura" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="subidos" Nullable="true" />
+    <Property Type="Decimal" Name="progreso" Nullable="true" Precision="15" Scale="1" />
+    <Property Type="Decimal" Name="total" Nullable="true" Precision="18" Scale="0" />
+  </ComplexType>
+  <ComplexType Name="SEL_BUSQUEDA_FLOTILLA_SP_Result">
+    <Property Type="Decimal" Name="idLicitacion" Nullable="true" Precision="18" Scale="0" />
+    <Property Type="String" Name="descripcion" Nullable="true" MaxLength="209" />
+    <Property Type="String" Name="estatus" Nullable="true" MaxLength="25" />
+    <Property Type="String" Name="vin" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="factura" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="subidos" Nullable="true" />
+    <Property Type="Decimal" Name="progreso" Nullable="true" Precision="15" Scale="1" />
+    <Property Type="Decimal" Name="total" Nullable="true" Precision="18" Scale="0" />
+  </ComplexType>
+  <ComplexType Name="SEL_DETALLE_SINCRONIZACION_SP_Result">
+    <Property Type="String" Name="vin" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="nombre" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="SEL_DOCFASE_PERMISO_SP_Result">
+    <Property Type="String" Name="rutaDocumento" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="vinDocumento" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="descripcionDocumento" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="abvrDocumento" Nullable="true" MaxLength="50" />
+    <Property Type="Boolean" Name="consultarDocumento" Nullable="false" />
+    <Property Type="Boolean" Name="cargarDocumento" Nullable="false" />
+    <Property Type="Boolean" Name="descargarDocumento" Nullable="false" />
+    <Property Type="Boolean" Name="obligatorioDocumento" Nullable="false" />
+    <Property Type="Int16" Name="ordenDocumento" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SEL_FASE_PERMISO_SP_Result">
+    <Property Type="Decimal" Name="idFase" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="String" Name="nombreFase" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="descripcionFase" Nullable="false" MaxLength="50" />
+    <Property Type="Int16" Name="ordenFase" Nullable="false" />
+    <Property Type="String" Name="imagenFase" Nullable="true" MaxLength="50" />
+    <Property Type="Int16" Name="alertas" Nullable="true" />
+    <Property Type="Int16" Name="estatus" Nullable="true" />
+    <Property Type="Int16" Name="activo" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SEL_LICITACION_APP_SP_Result">
+    <Property Type="String" Name="vin" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="factura" Nullable="true" MaxLength="50" />
+    <Property Type="Decimal" Name="idLicitacion" Nullable="true" Precision="18" Scale="0" />
+    <Property Type="String" Name="tipo" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="marca" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="modelo" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="numeroMotor" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="color" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="estatus" Nullable="true" MaxLength="25" />
+  </ComplexType>
+  <ComplexType Name="SEL_PERMISOS_SP_Result">
+    <Property Type="String" Name="idDocumento" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="nombreCatalogo" Nullable="false" MaxLength="50" />
+    <Property Type="Int16" Name="permiso" Nullable="false" />
+    <Property Type="String" Name="valor" Nullable="false" MaxLength="200" />
+    <Property Type="DateTime" Name="fechaMod" Nullable="true" Precision="23" />
+    <Property Type="String" Name="nombreUsuario" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="accion" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="SEL_PERMISOS_SP1_Result">
+    <Property Type="String" Name="nombreCatalogo" Nullable="true" MaxLength="50" />
+    <Property Type="Int16" Name="permiso" Nullable="true" />
+    <Property Type="String" Name="idCatalogo" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="valor" Nullable="false" MaxLength="200" />
+    <Property Type="DateTime" Name="fecha" Nullable="true" Precision="23" />
+    <Property Type="String" Name="nombreUsuario" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="accion" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="SEL_ROL_DOCUMENTO_SP_Result">
+    <Property Type="Decimal" Name="idRol" Nullable="true" Precision="18" Scale="0" />
+    <Property Type="Int32" Name="orden" Nullable="true" />
+    <Property Type="Decimal" Name="idDocumento" Nullable="true" Precision="18" Scale="0" />
+    <Property Type="String" Name="tituloDoc" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="valor" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="tipo" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="estatus" Nullable="true" MaxLength="20" />
+  </ComplexType>
+  <ComplexType Name="SEL_ROL_TODOS_SP_Result">
+    <Property Type="Decimal" Name="idRol" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="String" Name="descripcion" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="SEL_SINCRONIZACION_MAESTRO_DETALLE_SP_Result">
+    <Property Type="Decimal" Name="idSincronizacion" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="idUsusario" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="String" Name="nombreCompleto" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="fecha" Nullable="true" MaxLength="20" />
+    <Property Type="Int32" Name="cantidad" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="SEL_UNIDAD_ENCABEZADO_SP_Result">
+    <Property Type="Decimal" Name="idLicitacion" Nullable="true" Precision="18" Scale="0" />
+    <Property Type="String" Name="factura" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="descripcion" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="tipo" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="marca" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="modelo" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="numeroMotor" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="color" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="vin" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="estatus" Nullable="true" MaxLength="25" />
+    <Property Type="DateTime" Name="ultimaModificacion" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="faseActual" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="SEL_UNIDAD_SP_Result">
+    <Property Type="Decimal" Name="idUnidad" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="String" Name="vin" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="idLicitacion" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="economicoInt" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="economicoExt" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="placa" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="poliza" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="tenencia" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="verificacion" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="permisoEspecial" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="domicilioEntrega" Nullable="false" MaxLength="200" />
+  </ComplexType>
+  <ComplexType Name="SEL_VALIDAR_USUARIO_SP_Result">
+    <Property Type="Decimal" Name="idUsuario" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="idRol" Nullable="true" Precision="18" Scale="0" />
+    <Property Type="String" Name="nombreCompleto" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="rol" Nullable="true" MaxLength="50" />
+    <Property Type="Int16" Name="estatus" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
+</Schema>

@@ -1,0 +1,588 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FlotillasModelStoreContainer" CdmEntityContainer="FlotillasEntities">
+    <EntitySetMapping Name="Bitacora">
+      <EntityTypeMapping TypeName="FlotillasModel.Bitacora">
+        <MappingFragment StoreEntitySet="Bitacora">
+          <ScalarProperty Name="idBitacora" ColumnName="idBitacora" />
+          <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+          <ScalarProperty Name="IdDocumento" ColumnName="IdDocumento" />
+          <ScalarProperty Name="vin" ColumnName="vin" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="accion" ColumnName="accion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Catalogo">
+      <EntityTypeMapping TypeName="FlotillasModel.Catalogo">
+        <MappingFragment StoreEntitySet="Catalogo">
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="idPadre" ColumnName="idPadre" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="valor" ColumnName="valor" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CatalogoDocumento">
+      <EntityTypeMapping TypeName="FlotillasModel.CatalogoDocumento">
+        <MappingFragment StoreEntitySet="CatalogoDocumento">
+          <ScalarProperty Name="idDocumento" ColumnName="idDocumento" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="abvr" ColumnName="abvr" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Documento">
+      <EntityTypeMapping TypeName="FlotillasModel.Documento">
+        <MappingFragment StoreEntitySet="Documento">
+          <ScalarProperty Name="idDocumento" ColumnName="idDocumento" />
+          <ScalarProperty Name="ruta" ColumnName="ruta" />
+          <ScalarProperty Name="vin" ColumnName="vin" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DocumentosMultiples">
+      <EntityTypeMapping TypeName="FlotillasModel.DocumentosMultiples">
+        <MappingFragment StoreEntitySet="DocumentosMultiples">
+          <ScalarProperty Name="idDocumentos" ColumnName="idDocumentos" />
+          <ScalarProperty Name="valor" ColumnName="valor" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Fase">
+      <EntityTypeMapping TypeName="FlotillasModel.Fase">
+        <MappingFragment StoreEntitySet="Fase">
+          <ScalarProperty Name="idFase" ColumnName="idFase" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="orden" ColumnName="orden" />
+          <ScalarProperty Name="imagen" ColumnName="imagen" />
+          <ScalarProperty Name="alertas" ColumnName="alertas" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="activo" ColumnName="activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FaseDocumento">
+      <EntityTypeMapping TypeName="FlotillasModel.FaseDocumento">
+        <MappingFragment StoreEntitySet="FaseDocumento">
+          <ScalarProperty Name="idFaseDocumento" ColumnName="idFaseDocumento" />
+          <ScalarProperty Name="idFase" ColumnName="idFase" />
+          <ScalarProperty Name="idDocumento" ColumnName="idDocumento" />
+          <ScalarProperty Name="obligatorio" ColumnName="obligatorio" />
+          <ScalarProperty Name="orden" ColumnName="orden" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FaseRol">
+      <EntityTypeMapping TypeName="FlotillasModel.FaseRol">
+        <MappingFragment StoreEntitySet="FaseRol">
+          <ScalarProperty Name="idFaseRol" ColumnName="idFaseRol" />
+          <ScalarProperty Name="idRol" ColumnName="idRol" />
+          <ScalarProperty Name="idFase" ColumnName="idFase" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Gps">
+      <EntityTypeMapping TypeName="FlotillasModel.Gps">
+        <MappingFragment StoreEntitySet="Gps">
+          <ScalarProperty Name="idGps" ColumnName="idGps" />
+          <ScalarProperty Name="vin" ColumnName="vin" />
+          <ScalarProperty Name="numeroGps" ColumnName="numeroGps" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Licitacion">
+      <EntityTypeMapping TypeName="FlotillasModel.Licitacion">
+        <MappingFragment StoreEntitySet="Licitacion">
+          <ScalarProperty Name="idLicitacion" ColumnName="idLicitacion" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LicitacionUnidad">
+      <EntityTypeMapping TypeName="FlotillasModel.LicitacionUnidad">
+        <MappingFragment StoreEntitySet="LicitacionUnidad">
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+          <ScalarProperty Name="idSucursal" ColumnName="idSucursal" />
+          <ScalarProperty Name="vin" ColumnName="vin" />
+          <ScalarProperty Name="factura" ColumnName="factura" />
+          <ScalarProperty Name="idLicitacion" ColumnName="idLicitacion" />
+          <ScalarProperty Name="tipo" ColumnName="tipo" />
+          <ScalarProperty Name="marca" ColumnName="marca" />
+          <ScalarProperty Name="modelo" ColumnName="modelo" />
+          <ScalarProperty Name="numeroMotor" ColumnName="numeroMotor" />
+          <ScalarProperty Name="color" ColumnName="color" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ListaDocumentos">
+      <EntityTypeMapping TypeName="FlotillasModel.ListaDocumentos">
+        <MappingFragment StoreEntitySet="ListaDocumentos">
+          <ScalarProperty Name="idListaDocumentos" ColumnName="idListaDocumentos" />
+          <ScalarProperty Name="vin" ColumnName="vin" />
+          <ScalarProperty Name="idDocumento" ColumnName="idDocumento" />
+          <ScalarProperty Name="valor" ColumnName="valor" />
+          <ScalarProperty Name="consecutivo" ColumnName="consecutivo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Parametro">
+      <EntityTypeMapping TypeName="FlotillasModel.Parametro">
+        <MappingFragment StoreEntitySet="Parametro">
+          <ScalarProperty Name="idParametro" ColumnName="idParametro" />
+          <ScalarProperty Name="idTipo" ColumnName="idTipo" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="valor" ColumnName="valor" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PerfilDocumento">
+      <EntityTypeMapping TypeName="FlotillasModel.PerfilDocumento">
+        <MappingFragment StoreEntitySet="PerfilDocumento">
+          <ScalarProperty Name="idPerfilDocumento" ColumnName="idPerfilDocumento" />
+          <ScalarProperty Name="idRol" ColumnName="idRol" />
+          <ScalarProperty Name="idDocumento" ColumnName="idDocumento" />
+          <ScalarProperty Name="consultar" ColumnName="consultar" />
+          <ScalarProperty Name="cargar" ColumnName="cargar" />
+          <ScalarProperty Name="descargar" ColumnName="descargar" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Permiso">
+      <EntityTypeMapping TypeName="FlotillasModel.Permiso">
+        <MappingFragment StoreEntitySet="Permiso">
+          <ScalarProperty Name="idPermiso" ColumnName="idPermiso" />
+          <ScalarProperty Name="idRol" ColumnName="idRol" />
+          <ScalarProperty Name="idFase" ColumnName="idFase" />
+          <ScalarProperty Name="idCatalogo" ColumnName="idCatalogo" />
+          <ScalarProperty Name="permiso1" ColumnName="permiso" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rol">
+      <EntityTypeMapping TypeName="FlotillasModel.Rol">
+        <MappingFragment StoreEntitySet="Rol">
+          <ScalarProperty Name="idRol" ColumnName="idRol" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sincronizacion">
+      <EntityTypeMapping TypeName="FlotillasModel.Sincronizacion">
+        <MappingFragment StoreEntitySet="Sincronizacion">
+          <ScalarProperty Name="idSincronizacion" ColumnName="idSincronizacion" />
+          <ScalarProperty Name="idUsusario" ColumnName="idUsusario" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SincronizacionUnidad">
+      <EntityTypeMapping TypeName="FlotillasModel.SincronizacionUnidad">
+        <MappingFragment StoreEntitySet="SincronizacionUnidad">
+          <ScalarProperty Name="idSincronizacionUnidad" ColumnName="idSincronizacionUnidad" />
+          <ScalarProperty Name="idSincronizacion" ColumnName="idSincronizacion" />
+          <ScalarProperty Name="idUnidad" ColumnName="idUnidad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="FlotillasModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Unidad">
+      <EntityTypeMapping TypeName="FlotillasModel.Unidad">
+        <MappingFragment StoreEntitySet="Unidad">
+          <ScalarProperty Name="idUnidad" ColumnName="idUnidad" />
+          <ScalarProperty Name="vin" ColumnName="vin" />
+          <ScalarProperty Name="idLicitacion" ColumnName="idLicitacion" />
+          <ScalarProperty Name="economicoInt" ColumnName="economicoInt" />
+          <ScalarProperty Name="economicoExt" ColumnName="economicoExt" />
+          <ScalarProperty Name="placa" ColumnName="placa" />
+          <ScalarProperty Name="poliza" ColumnName="poliza" />
+          <ScalarProperty Name="tenencia" ColumnName="tenencia" />
+          <ScalarProperty Name="verificacion" ColumnName="verificacion" />
+          <ScalarProperty Name="permisoEspecial" ColumnName="permisoEspecial" />
+          <ScalarProperty Name="domicilioEntrega" ColumnName="domicilioEntrega" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UnidadAccesorio">
+      <EntityTypeMapping TypeName="FlotillasModel.UnidadAccesorio">
+        <MappingFragment StoreEntitySet="UnidadAccesorio">
+          <ScalarProperty Name="idUnidadAccesorio" ColumnName="idUnidadAccesorio" />
+          <ScalarProperty Name="idUnidad" ColumnName="idUnidad" />
+          <ScalarProperty Name="idAccesorio" ColumnName="idAccesorio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UnidadAccesorioOtro">
+      <EntityTypeMapping TypeName="FlotillasModel.UnidadAccesorioOtro">
+        <MappingFragment StoreEntitySet="UnidadAccesorioOtro">
+          <ScalarProperty Name="idUnidadAccesorioOtro" ColumnName="idUnidadAccesorioOtro" />
+          <ScalarProperty Name="idUnidad" ColumnName="idUnidad" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UnidadPropiedad">
+      <EntityTypeMapping TypeName="FlotillasModel.UnidadPropiedad">
+        <MappingFragment StoreEntitySet="UnidadPropiedad">
+          <ScalarProperty Name="idUnidad" ColumnName="idUnidad" />
+          <ScalarProperty Name="vin" ColumnName="vin" />
+          <ScalarProperty Name="idDocumento" ColumnName="idDocumento" />
+          <ScalarProperty Name="valor" ColumnName="valor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuario">
+      <EntityTypeMapping TypeName="FlotillasModel.Usuario">
+        <MappingFragment StoreEntitySet="Usuario">
+          <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+          <ScalarProperty Name="idRol" ColumnName="idRol" />
+          <ScalarProperty Name="nombreCompleto" ColumnName="nombreCompleto" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Valor">
+      <EntityTypeMapping TypeName="FlotillasModel.Valor">
+        <MappingFragment StoreEntitySet="Valor">
+          <ScalarProperty Name="idValor" ColumnName="idValor" />
+          <ScalarProperty Name="valor1" ColumnName="valor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="DEL_ACCESORIO_OTROS_SP" FunctionName="FlotillasModel.Store.DEL_ACCESORIO_OTROS_SP" />
+    <FunctionImportMapping FunctionImportName="DEL_ACCESORIO_SP" FunctionName="FlotillasModel.Store.DEL_ACCESORIO_SP" />
+    <FunctionImportMapping FunctionImportName="DEL_UNIDAD_PROPIEDAD_SP" FunctionName="FlotillasModel.Store.DEL_UNIDAD_PROPIEDAD_SP" />
+    <FunctionImportMapping FunctionImportName="INS_ACCESORIO_OTROS_SP" FunctionName="FlotillasModel.Store.INS_ACCESORIO_OTROS_SP" />
+    <FunctionImportMapping FunctionImportName="INS_ACCESORIO_SP" FunctionName="FlotillasModel.Store.INS_ACCESORIO_SP" />
+    <FunctionImportMapping FunctionImportName="INS_BITACORA_SP" FunctionName="FlotillasModel.Store.INS_BITACORA_SP" />
+    <FunctionImportMapping FunctionImportName="INS_SINCRONIZACION_MAESTRO_DETALLE_SP" FunctionName="FlotillasModel.Store.INS_SINCRONIZACION_MAESTRO_DETALLE_SP" />
+    <FunctionImportMapping FunctionImportName="INS_UNIDAD_PROPIEDAD_SP" FunctionName="FlotillasModel.Store.INS_UNIDAD_PROPIEDAD_SP" />
+    <FunctionImportMapping FunctionImportName="INS_UNIDAD_SP" FunctionName="FlotillasModel.Store.INS_UNIDAD_SP" />
+    <FunctionImportMapping FunctionImportName="INS_USUARIO_PENDIENTE_SP" FunctionName="FlotillasModel.Store.INS_USUARIO_PENDIENTE_SP" />
+    <FunctionImportMapping FunctionImportName="SEL_ACCESORIO_SP" FunctionName="FlotillasModel.Store.SEL_ACCESORIO_SP">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="FlotillasModel.SEL_ACCESORIO_SP_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="idUnidad" ColumnName="idUnidad" />
+          <ScalarProperty Name="idAccesorio" ColumnName="idAccesorio" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SEL_BITACORA_SP" FunctionName="FlotillasModel.Store.SEL_BITACORA_SP">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="FlotillasModel.SEL_BITACORA_SP_Result">
+          <ScalarProperty Name="idBitacora" ColumnName="idBitacora" />
+          <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+          <ScalarProperty Name="idDocumento" ColumnName="idDocumento" />
+          <ScalarProperty Name="vin" ColumnName="vin" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="accion" ColumnName="accion" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SEL_BUSQUEDA_FLOTILLA_APP_SP" FunctionName="FlotillasModel.Store.SEL_BUSQUEDA_FLOTILLA_APP_SP">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="FlotillasModel.SEL_BUSQUEDA_FLOTILLA_APP_SP_Result">
+          <ScalarProperty Name="idLicitacion" ColumnName="idLicitacion" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="vin" ColumnName="vin" />
+          <ScalarProperty Name="factura" ColumnName="factura" />
+          <ScalarProperty Name="subidos" ColumnName="subidos" />
+          <ScalarProperty Name="progreso" ColumnName="progreso" />
+          <ScalarProperty Name="total" ColumnName="total" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SEL_CLIENTES_SP" FunctionName="FlotillasModel.Store.SEL_CLIENTES_SP">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="FlotillasModel.SEL_CLIENTES_SP_Result">
+          <ScalarProperty Name="idLicitacion" ColumnName="idLicitacion" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SEL_DETALLE_SINCRONIZACION_SP" FunctionName="FlotillasModel.Store.SEL_DETALLE_SINCRONIZACION_SP">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="FlotillasModel.SEL_DETALLE_SINCRONIZACION_SP_Result">
+          <ScalarProperty Name="vin" ColumnName="vin" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SEL_DOCFASE_PERMISO_SP" FunctionName="FlotillasModel.Store.SEL_DOCFASE_PERMISO_SP">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="FlotillasModel.SEL_DOCFASE_PERMISO_SP_Result">
+          <ScalarProperty Name="rutaDocumento" ColumnName="rutaDocumento" />
+          <ScalarProperty Name="vinDocumento" ColumnName="vinDocumento" />
+          <ScalarProperty Name="descripcionDocumento" ColumnName="descripcionDocumento" />
+          <ScalarProperty Name="abvrDocumento" ColumnName="abvrDocumento" />
+          <ScalarProperty Name="consultarDocumento" ColumnName="consultarDocumento" />
+          <ScalarProperty Name="cargarDocumento" ColumnName="cargarDocumento" />
+          <ScalarProperty Name="descargarDocumento" ColumnName="descargarDocumento" />
+          <ScalarProperty Name="obligatorioDocumento" ColumnName="obligatorioDocumento" />
+          <ScalarProperty Name="ordenDocumento" ColumnName="ordenDocumento" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SEL_FASE_PERMISO_SP" FunctionName="FlotillasModel.Store.SEL_FASE_PERMISO_SP">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="FlotillasModel.SEL_FASE_PERMISO_SP_Result">
+          <ScalarProperty Name="idFase" ColumnName="idFase" />
+          <ScalarProperty Name="nombreFase" ColumnName="nombreFase" />
+          <ScalarProperty Name="descripcionFase" ColumnName="descripcionFase" />
+          <ScalarProperty Name="ordenFase" ColumnName="ordenFase" />
+          <ScalarProperty Name="imagenFase" ColumnName="imagenFase" />
+          <ScalarProperty Name="alertas" ColumnName="alertas" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="activo" ColumnName="activo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SEL_LICITACION_APP_SP" FunctionName="FlotillasModel.Store.SEL_LICITACION_APP_SP">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="FlotillasModel.SEL_LICITACION_APP_SP_Result">
+          <ScalarProperty Name="vin" ColumnName="vin" />
+          <ScalarProperty Name="factura" ColumnName="factura" />
+          <ScalarProperty Name="idLicitacion" ColumnName="idLicitacion" />
+          <ScalarProperty Name="tipo" ColumnName="tipo" />
+          <ScalarProperty Name="marca" ColumnName="marca" />
+          <ScalarProperty Name="modelo" ColumnName="modelo" />
+          <ScalarProperty Name="numeroMotor" ColumnName="numeroMotor" />
+          <ScalarProperty Name="color" ColumnName="color" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SEL_LISTA_DOCUMENTOS_SP" FunctionName="FlotillasModel.Store.SEL_LISTA_DOCUMENTOS_SP">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="FlotillasModel.SEL_LISTA_DOCUMENTOS_SP_Result">
+          <ScalarProperty Name="vin" ColumnName="vin" />
+          <ScalarProperty Name="idDocumento" ColumnName="idDocumento" />
+          <ScalarProperty Name="valor" ColumnName="valor" />
+          <ScalarProperty Name="consecutivo" ColumnName="consecutivo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SEL_PERMISOS_SP" FunctionName="FlotillasModel.Store.SEL_PERMISOS_SP">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="FlotillasModel.SEL_PERMISOS_SP_Result">
+          <ScalarProperty Name="idDocumento" ColumnName="idDocumento" />
+          <ScalarProperty Name="nombreCatalogo" ColumnName="nombreCatalogo" />
+          <ScalarProperty Name="permiso" ColumnName="permiso" />
+          <ScalarProperty Name="valor" ColumnName="valor" />
+          <ScalarProperty Name="fechaMod" ColumnName="fechaMod" />
+          <ScalarProperty Name="nombreUsuario" ColumnName="nombreUsuario" />
+          <ScalarProperty Name="accion" ColumnName="accion" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SEL_PERMISOS_SP1" FunctionName="FlotillasModel.Store.SEL_PERMISOS_SP1">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="FlotillasModel.SEL_PERMISOS_SP1_Result">
+          <ScalarProperty Name="nombreCatalogo" ColumnName="nombreCatalogo" />
+          <ScalarProperty Name="permiso" ColumnName="permiso" />
+          <ScalarProperty Name="idCatalogo" ColumnName="idCatalogo" />
+          <ScalarProperty Name="valor" ColumnName="valor" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="nombreUsuario" ColumnName="nombreUsuario" />
+          <ScalarProperty Name="accion" ColumnName="accion" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SEL_REPORTE_DOCUMENTO_SP" FunctionName="FlotillasModel.Store.SEL_REPORTE_DOCUMENTO_SP">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="FlotillasModel.SEL_REPORTE_DOCUMENTO_SP_Result">
+          <ScalarProperty Name="avance23" ColumnName="avance23" />
+          <ScalarProperty Name="avance13" ColumnName="avance13" />
+          <ScalarProperty Name="avance19" ColumnName="avance19" />
+          <ScalarProperty Name="avance31" ColumnName="avance31" />
+          <ScalarProperty Name="avance24" ColumnName="avance24" />
+          <ScalarProperty Name="avance16" ColumnName="avance16" />
+          <ScalarProperty Name="avance22" ColumnName="avance22" />
+          <ScalarProperty Name="avance36" ColumnName="avance36" />
+          <ScalarProperty Name="avance46" ColumnName="avance46" />
+          <ScalarProperty Name="total" ColumnName="total" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SEL_ROL_DOCUMENTO_SP" FunctionName="FlotillasModel.Store.SEL_ROL_DOCUMENTO_SP">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="FlotillasModel.SEL_ROL_DOCUMENTO_SP_Result">
+          <ScalarProperty Name="idRol" ColumnName="idRol" />
+          <ScalarProperty Name="orden" ColumnName="orden" />
+          <ScalarProperty Name="idDocumento" ColumnName="idDocumento" />
+          <ScalarProperty Name="tituloDoc" ColumnName="tituloDoc" />
+          <ScalarProperty Name="valor" ColumnName="valor" />
+          <ScalarProperty Name="tipo" ColumnName="tipo" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SEL_ROL_TODOS_SP" FunctionName="FlotillasModel.Store.SEL_ROL_TODOS_SP">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="FlotillasModel.SEL_ROL_TODOS_SP_Result">
+          <ScalarProperty Name="idRol" ColumnName="idRol" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SEL_SINCRONIZACION_MAESTRO_DETALLE_SP" FunctionName="FlotillasModel.Store.SEL_SINCRONIZACION_MAESTRO_DETALLE_SP">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="FlotillasModel.SEL_SINCRONIZACION_MAESTRO_DETALLE_SP_Result">
+          <ScalarProperty Name="idSincronizacion" ColumnName="idSincronizacion" />
+          <ScalarProperty Name="idUsusario" ColumnName="idUsusario" />
+          <ScalarProperty Name="nombreCompleto" ColumnName="nombreCompleto" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SEL_UNIDAD_PROPIEDAD_SP" FunctionName="FlotillasModel.Store.SEL_UNIDAD_PROPIEDAD_SP" />
+    <FunctionImportMapping FunctionImportName="SEL_UNIDAD_SP" FunctionName="FlotillasModel.Store.SEL_UNIDAD_SP">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="FlotillasModel.SEL_UNIDAD_SP_Result">
+          <ScalarProperty Name="idUnidad" ColumnName="idUnidad" />
+          <ScalarProperty Name="vin" ColumnName="vin" />
+          <ScalarProperty Name="idLicitacion" ColumnName="idLicitacion" />
+          <ScalarProperty Name="economicoInt" ColumnName="economicoInt" />
+          <ScalarProperty Name="economicoExt" ColumnName="economicoExt" />
+          <ScalarProperty Name="placa" ColumnName="placa" />
+          <ScalarProperty Name="poliza" ColumnName="poliza" />
+          <ScalarProperty Name="tenencia" ColumnName="tenencia" />
+          <ScalarProperty Name="verificacion" ColumnName="verificacion" />
+          <ScalarProperty Name="permisoEspecial" ColumnName="permisoEspecial" />
+          <ScalarProperty Name="domicilioEntrega" ColumnName="domicilioEntrega" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SEL_VALIDAR_USUARIO_SP" FunctionName="FlotillasModel.Store.SEL_VALIDAR_USUARIO_SP">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="FlotillasModel.SEL_VALIDAR_USUARIO_SP_Result">
+          <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+          <ScalarProperty Name="idRol" ColumnName="idRol" />
+          <ScalarProperty Name="nombreCompleto" ColumnName="nombreCompleto" />
+          <ScalarProperty Name="rol" ColumnName="rol" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="FlotillasModel.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="FlotillasModel.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="FlotillasModel.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="FlotillasModel.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="FlotillasModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="FlotillasModel.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="FlotillasModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="FlotillasModel.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="FlotillasModel.Store.sp_upgraddiagrams" />
+    <FunctionImportMapping FunctionImportName="UPD_ESTATUS_LICITACION_SP" FunctionName="FlotillasModel.Store.UPD_ESTATUS_LICITACION_SP" />
+    <FunctionImportMapping FunctionImportName="UPD_UNIDAD_PROPIEDAD_SP" FunctionName="FlotillasModel.Store.UPD_UNIDAD_PROPIEDAD_SP" />
+    <FunctionImportMapping FunctionImportName="UPD_UNIDAD_SP" FunctionName="FlotillasModel.Store.UPD_UNIDAD_SP" />
+    <FunctionImportMapping FunctionImportName="UPD_USUARIO_ACTIVO_SP" FunctionName="FlotillasModel.Store.UPD_USUARIO_ACTIVO_SP" />
+    <FunctionImportMapping FunctionImportName="SEL_UNIDAD_ENCABEZADO_SP" FunctionName="FlotillasModel.Store.SEL_UNIDAD_ENCABEZADO_SP">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="FlotillasModel.SEL_UNIDAD_ENCABEZADO_SP_Result">
+          <ScalarProperty Name="idLicitacion" ColumnName="idLicitacion" />
+          <ScalarProperty Name="factura" ColumnName="factura" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="tipo" ColumnName="tipo" />
+          <ScalarProperty Name="marca" ColumnName="marca" />
+          <ScalarProperty Name="modelo" ColumnName="modelo" />
+          <ScalarProperty Name="numeroMotor" ColumnName="numeroMotor" />
+          <ScalarProperty Name="color" ColumnName="color" />
+          <ScalarProperty Name="vin" ColumnName="vin" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="ultimaModificacion" ColumnName="ultimaModificacion" />
+          <ScalarProperty Name="faseActual" ColumnName="faseActual" />
+          <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
+          <ScalarProperty Name="idSucursal" ColumnName="idSucursal" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SEL_VALIDAR_USUARIO_URL_SP" FunctionName="FlotillasModel.Store.SEL_VALIDAR_USUARIO_URL_SP">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="FlotillasModel.SEL_VALIDAR_USUARIO_URL_SP_Result">
+          <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+          <ScalarProperty Name="idRol" ColumnName="idRol" />
+          <ScalarProperty Name="nombreCompleto" ColumnName="nombreCompleto" />
+          <ScalarProperty Name="rol" ColumnName="rol" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SEL_PERSONA_PUESTO_SP" FunctionName="FlotillasModel.Store.SEL_PERSONA_PUESTO_SP">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="FlotillasModel.SEL_PERSONA_PUESTO_SP_Result">
+          <ScalarProperty Name="idCatPersona" ColumnName="idCatPersona" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="puesto" ColumnName="puesto" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SEL_REPORTE_DOCUMENTO_TOTAL_SP" FunctionName="FlotillasModel.Store.SEL_REPORTE_DOCUMENTO_TOTAL_SP">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="FlotillasModel.SEL_REPORTE_DOCUMENTO_TOTAL_SP_Result">
+          <ScalarProperty Name="idDocumentos" ColumnName="idDocumentos" />
+          <ScalarProperty Name="documentosCargados" ColumnName="documentosCargados" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="documentosTotal" ColumnName="documentosTotal" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SEL_BUSQUEDA_FLOTILLA_SP" FunctionName="FlotillasModel.Store.SEL_BUSQUEDA_FLOTILLA_SP">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="FlotillasModel.SEL_BUSQUEDA_FLOTILLA_SP_Result">
+          <ScalarProperty Name="idLicitacion" ColumnName="idLicitacion" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="vin" ColumnName="vin" />
+          <ScalarProperty Name="factura" ColumnName="factura" />
+          <ScalarProperty Name="subidos" ColumnName="subidos" />
+          <ScalarProperty Name="progreso" ColumnName="progreso" />
+          <ScalarProperty Name="total" ColumnName="total" />
+          <ScalarProperty Name="licitacion" ColumnName="licitacion" />
+          <ScalarProperty Name="numeroMotor" ColumnName="numeroMotor" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

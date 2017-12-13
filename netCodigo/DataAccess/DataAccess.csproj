@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{77D2219F-ACBA-4566-BD18-D35F824547EE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataAccess</RootNamespace>
+    <AssemblyName>DataAccess</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model\Bitacora.cs">
+      <DependentUpon>ModelFlotilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Catalogo.cs">
+      <DependentUpon>ModelFlotilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CatalogoDocumento.cs">
+      <DependentUpon>ModelFlotilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Documento.cs">
+      <DependentUpon>ModelFlotilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DocumentosMultiples.cs">
+      <DependentUpon>ModelFlotilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Fase.cs">
+      <DependentUpon>ModelFlotilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\FaseDocumento.cs">
+      <DependentUpon>ModelFlotilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\FaseRol.cs">
+      <DependentUpon>ModelFlotilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Gps.cs">
+      <DependentUpon>ModelFlotilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Licitacion.cs">
+      <DependentUpon>ModelFlotilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\LicitacionUnidad.cs">
+      <DependentUpon>ModelFlotilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ListaDocumentos.cs">
+      <DependentUpon>ModelFlotilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ModelFlotilla.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelFlotilla.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ModelFlotilla.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelFlotilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ModelFlotilla.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelFlotilla.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Parametro.cs">
+      <DependentUpon>ModelFlotilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PerfilDocumento.cs">
+      <DependentUpon>ModelFlotilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Permiso.cs">
+      <DependentUpon>ModelFlotilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Rol.cs">
+      <DependentUpon>ModelFlotilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SEL_ACCESORIO_SP_Result.cs">
+      <DependentUpon>ModelFlotilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SEL_BITACORA_SP_Result.cs">
+      <DependentUpon>ModelFlotilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SEL_BUSQUEDA_FLOTILLA_APP_SP_Result.cs">
+      <DependentUpon>ModelFlotilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SEL_BUSQUEDA_FLOTILLA_SP_Result.cs">
+      <DependentUpon>ModelFlotilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SEL_CLIENTES_SP_Result.cs">
+      <DependentUpon>ModelFlotilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SEL_DETALLE_SINCRONIZACION_SP_Result.cs">
+      <DependentUpon>ModelFlotilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SEL_DOCFASE_PERMISO_SP_Result.cs">
+      <DependentUpon>ModelFlotilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SEL_FASE_PERMISO_SP_Result.cs">
+      <DependentUpon>ModelFlotilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SEL_LICITACION_APP_SP_Result.cs">
+      <DependentUpon>ModelFlotilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SEL_LISTA_DOCUMENTOS_SP_Result.cs">
+      <DependentUpon>ModelFlotilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SEL_PERMISOS_SP1_Result.cs">
+      <DependentUpon>ModelFlotilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SEL_PERMISOS_SP_Result.cs">
+      <DependentUpon>ModelFlotilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SEL_PERSONA_PUESTO_SP_Result.cs">
+      <DependentUpon>ModelFlotilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SEL_REPORTE_DOCUMENTO_SP_Result.cs">
+      <DependentUpon>ModelFlotilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SEL_REPORTE_DOCUMENTO_TOTAL_SP_Result.cs">
+      <DependentUpon>ModelFlotilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SEL_ROL_DOCUMENTO_SP_Result.cs">
+      <DependentUpon>ModelFlotilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SEL_ROL_TODOS_SP_Result.cs">
+      <DependentUpon>ModelFlotilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SEL_SINCRONIZACION_MAESTRO_DETALLE_SP_Result.cs">
+      <DependentUpon>ModelFlotilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SEL_UNIDAD_ENCABEZADO_SP_Result.cs">
+      <DependentUpon>ModelFlotilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SEL_UNIDAD_SP_Result.cs">
+      <DependentUpon>ModelFlotilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SEL_VALIDAR_USUARIO_SP_Result.cs">
+      <DependentUpon>ModelFlotilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SEL_VALIDAR_USUARIO_URL_SP_Result.cs">
+      <DependentUpon>ModelFlotilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sincronizacion.cs">
+      <DependentUpon>ModelFlotilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SincronizacionUnidad.cs">
+      <DependentUpon>ModelFlotilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>ModelFlotilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_helpdiagrams_Result.cs">
+      <DependentUpon>ModelFlotilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sysdiagrams.cs">
+      <DependentUpon>ModelFlotilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Unidad.cs">
+      <DependentUpon>ModelFlotilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\UnidadAccesorio.cs">
+      <DependentUpon>ModelFlotilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\UnidadAccesorioOtro.cs">
+      <DependentUpon>ModelFlotilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\UnidadPropiedad.cs">
+      <DependentUpon>ModelFlotilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Usuario.cs">
+      <DependentUpon>ModelFlotilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Valor.cs">
+      <DependentUpon>ModelFlotilla.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <EntityDeploy Include="Model\ModelFlotilla.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModelFlotilla.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model\ModelFlotilla.edmx.diagram">
+      <DependentUpon>ModelFlotilla.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model\ModelFlotilla.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelFlotilla.edmx</DependentUpon>
+      <LastGenOutput>ModelFlotilla.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model\ModelFlotilla.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelFlotilla.edmx</DependentUpon>
+      <LastGenOutput>ModelFlotilla.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="15f85abbbecb4f1fb01a8ca638541cc6" Name="Diagram1">
+        <EntityTypeShape EntityType="FlotillasModel.Bitacora" Width="1.5" PointX="5.25" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FlotillasModel.Catalogo" Width="1.5" PointX="7.75" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FlotillasModel.CatalogoDocumento" Width="1.5" PointX="0.75" PointY="19.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FlotillasModel.Documento" Width="1.5" PointX="5.25" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="FlotillasModel.DocumentosMultiples" Width="1.5" PointX="7.75" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FlotillasModel.Fase" Width="1.5" PointX="0.75" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FlotillasModel.FaseDocumento" Width="1.5" PointX="3" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FlotillasModel.FaseRol" Width="1.5" PointX="3" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FlotillasModel.Gps" Width="1.5" PointX="5.25" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FlotillasModel.Licitacion" Width="1.5" PointX="0.75" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="FlotillasModel.LicitacionUnidad" Width="1.5" PointX="3" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FlotillasModel.ListaDocumentos" Width="1.5" PointX="7.75" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FlotillasModel.Parametro" Width="1.5" PointX="9.75" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FlotillasModel.PerfilDocumento" Width="1.5" PointX="5.25" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="FlotillasModel.Permiso" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FlotillasModel.Rol" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FlotillasModel.Sincronizacion" Width="1.5" PointX="5.25" PointY="20.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FlotillasModel.SincronizacionUnidad" Width="1.5" PointX="7.5" PointY="20.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FlotillasModel.sysdiagrams" Width="1.5" PointX="9.75" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FlotillasModel.Unidad" Width="1.5" PointX="5.25" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FlotillasModel.UnidadAccesorio" Width="1.5" PointX="9.75" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FlotillasModel.UnidadAccesorioOtro" Width="1.5" PointX="7.75" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FlotillasModel.UnidadPropiedad" Width="1.5" PointX="5.25" PointY="23.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FlotillasModel.Usuario" Width="1.5" PointX="3" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FlotillasModel.Valor" Width="1.5" PointX="9.75" PointY="13.375" IsExpanded="true" />
+        <AssociationConnector Association="FlotillasModel.FK_Bitacora_LicitacionUnidad" ManuallyRouted="false" />
+        <AssociationConnector Association="FlotillasModel.FK_Bitacora_Usuario" ManuallyRouted="false" />
+        <AssociationConnector Association="FlotillasModel.FK_FaseDocumento_CatalogoDocumento" ManuallyRouted="false" />
+        <AssociationConnector Association="FlotillasModel.FK_Documentos_LicitacionUnidad" ManuallyRouted="false" />
+        <AssociationConnector Association="FlotillasModel.FK_FaseDocumento_Fase1" ManuallyRouted="false" />
+        <AssociationConnector Association="FlotillasModel.FK_Permisos_Fase" ManuallyRouted="false" />
+        <AssociationConnector Association="FlotillasModel.FK_FaseRol_Rol" ManuallyRouted="false" />
+        <AssociationConnector Association="FlotillasModel.FK_Gps_LicitacionUnidad" ManuallyRouted="false" />
+        <AssociationConnector Association="FlotillasModel.FK_LicitacionUnidad_Licitacion" ManuallyRouted="false" />
+        <AssociationConnector Association="FlotillasModel.FK_Unidad_LicitacionUnidad" ManuallyRouted="false" />
+        <AssociationConnector Association="FlotillasModel.FK_PerfilDocumento_Usuario" ManuallyRouted="false" />
+        <AssociationConnector Association="FlotillasModel.FK_Permisos_Rol" ManuallyRouted="false" />
+        <AssociationConnector Association="FlotillasModel.FK_Usuarios_Roles" ManuallyRouted="false" />
+        <AssociationConnector Association="FlotillasModel.FK_Sincronizacion_Usuario" ManuallyRouted="false" />
+        <AssociationConnector Association="FlotillasModel.FK_SincronizacionUnidad_Sincronizacion" ManuallyRouted="false" />
+        <AssociationConnector Association="FlotillasModel.FK_SincronizacionUnidad_UnidadPropiedad" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

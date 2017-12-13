@@ -1,0 +1,322 @@
+C:\Desarrollo\Flotilla\Notify\obj\Debug\Flotilla.csprojResolveAssemblyReference.cache
+C:\Desarrollo\Flotilla Back\Notify\bin\Central.dll.config
+C:\Desarrollo\Flotilla Back\Notify\bin\Central.dll
+C:\Desarrollo\Flotilla Back\Notify\bin\Central.pdb
+C:\Desarrollo\Flotilla Back\Notify\bin\Antlr3.Runtime.dll
+C:\Desarrollo\Flotilla Back\Notify\bin\Business.dll
+C:\Desarrollo\Flotilla Back\Notify\bin\DataAccess.dll
+C:\Desarrollo\Flotilla Back\Notify\bin\Entity.dll
+C:\Desarrollo\Flotilla Back\Notify\bin\EntityFramework.dll
+C:\Desarrollo\Flotilla Back\Notify\bin\EntityFramework.SqlServer.dll
+C:\Desarrollo\Flotilla Back\Notify\bin\Microsoft.Web.Infrastructure.dll
+C:\Desarrollo\Flotilla Back\Notify\bin\Newtonsoft.Json.dll
+C:\Desarrollo\Flotilla Back\Notify\bin\System.Web.Helpers.dll
+C:\Desarrollo\Flotilla Back\Notify\bin\System.Web.Http.WebHost.dll
+C:\Desarrollo\Flotilla Back\Notify\bin\System.Web.Mvc.dll
+C:\Desarrollo\Flotilla Back\Notify\bin\System.Web.Optimization.dll
+C:\Desarrollo\Flotilla Back\Notify\bin\System.Web.Razor.dll
+C:\Desarrollo\Flotilla Back\Notify\bin\System.Web.WebPages.Deployment.dll
+C:\Desarrollo\Flotilla Back\Notify\bin\System.Web.WebPages.dll
+C:\Desarrollo\Flotilla Back\Notify\bin\System.Web.WebPages.Razor.dll
+C:\Desarrollo\Flotilla Back\Notify\bin\WebGrease.dll
+C:\Desarrollo\Flotilla Back\Notify\bin\Business.pdb
+C:\Desarrollo\Flotilla Back\Notify\bin\DataAccess.pdb
+C:\Desarrollo\Flotilla Back\Notify\bin\Entity.pdb
+C:\Desarrollo\Flotilla Back\Notify\bin\EntityFramework.xml
+C:\Desarrollo\Flotilla Back\Notify\bin\EntityFramework.SqlServer.xml
+C:\Desarrollo\Flotilla Back\Notify\bin\Newtonsoft.Json.xml
+C:\Desarrollo\Flotilla Back\Notify\bin\System.Web.Helpers.xml
+C:\Desarrollo\Flotilla Back\Notify\bin\System.Web.Http.WebHost.xml
+C:\Desarrollo\Flotilla Back\Notify\bin\System.Web.Mvc.xml
+C:\Desarrollo\Flotilla Back\Notify\bin\System.Web.Optimization.xml
+C:\Desarrollo\Flotilla Back\Notify\bin\System.Web.Razor.xml
+C:\Desarrollo\Flotilla Back\Notify\bin\System.Web.WebPages.xml
+C:\Desarrollo\Flotilla Back\Notify\bin\System.Web.WebPages.Deployment.xml
+C:\Desarrollo\Flotilla Back\Notify\bin\System.Web.WebPages.Razor.xml
+C:\Desarrollo\Flotilla Back\Notify\bin\Antlr3.Runtime.pdb
+C:\Desarrollo\Flotilla Back\Notify\obj\Debug\Flotilla.csprojResolveAssemblyReference.cache
+C:\Desarrollo\Flotilla Back\Notify\obj\Debug\Central.dll
+C:\Desarrollo\Flotilla Back\Notify\obj\Debug\Central.pdb
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Notify\bin\Central.dll.config
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Notify\bin\Central.dll
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Notify\bin\Central.pdb
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Notify\bin\Antlr3.Runtime.dll
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Notify\bin\Business.dll
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Notify\bin\DataAccess.dll
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Notify\bin\Entity.dll
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Notify\bin\EntityFramework.dll
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Notify\bin\EntityFramework.SqlServer.dll
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Notify\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Notify\bin\Newtonsoft.Json.dll
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Notify\bin\System.Web.Helpers.dll
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Notify\bin\System.Web.Http.WebHost.dll
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Notify\bin\System.Web.Mvc.dll
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Notify\bin\System.Web.Optimization.dll
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Notify\bin\System.Web.Razor.dll
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Notify\bin\System.Web.WebPages.Deployment.dll
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Notify\bin\System.Web.WebPages.dll
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Notify\bin\System.Web.WebPages.Razor.dll
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Notify\bin\WebGrease.dll
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Notify\bin\Business.pdb
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Notify\bin\DataAccess.pdb
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Notify\bin\Entity.pdb
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Notify\bin\EntityFramework.xml
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Notify\bin\EntityFramework.SqlServer.xml
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Notify\bin\Newtonsoft.Json.xml
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Notify\bin\System.Web.Helpers.xml
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Notify\bin\System.Web.Http.WebHost.xml
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Notify\bin\System.Web.Mvc.xml
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Notify\bin\System.Web.Optimization.xml
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Notify\bin\System.Web.Razor.xml
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Notify\bin\System.Web.WebPages.xml
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Notify\bin\System.Web.WebPages.Deployment.xml
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Notify\bin\System.Web.WebPages.Razor.xml
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Notify\bin\Antlr3.Runtime.pdb
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Notify\obj\Debug\Flotilla.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Notify\obj\Debug\Central.dll
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Notify\obj\Debug\Central.pdb
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Notify\bin\EyeCatch.WCF.ServiceProxy.dll
+C:\Users\user\Desktop\FLOTILLAS\nueva\Flotilla Back\Notify\bin\EyeCatch.WCF.ServiceProxy.pdb
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Notify\bin\Central.dll.config
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Notify\bin\Central.dll
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Notify\bin\Central.pdb
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Notify\bin\Antlr3.Runtime.dll
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Notify\bin\Business.dll
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Notify\bin\DataAccess.dll
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Notify\bin\Entity.dll
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Notify\bin\EntityFramework.dll
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Notify\bin\EntityFramework.SqlServer.dll
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Notify\bin\EyeCatch.WCF.ServiceProxy.dll
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Notify\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Notify\bin\Newtonsoft.Json.dll
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Notify\bin\System.Web.Helpers.dll
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Notify\bin\System.Web.Http.WebHost.dll
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Notify\bin\System.Web.Mvc.dll
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Notify\bin\System.Web.Optimization.dll
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Notify\bin\System.Web.Razor.dll
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Notify\bin\System.Web.WebPages.Deployment.dll
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Notify\bin\System.Web.WebPages.dll
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Notify\bin\System.Web.WebPages.Razor.dll
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Notify\bin\WebGrease.dll
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Notify\bin\Business.pdb
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Notify\bin\DataAccess.pdb
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Notify\bin\Entity.pdb
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Notify\bin\EntityFramework.xml
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Notify\bin\EntityFramework.SqlServer.xml
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Notify\bin\EyeCatch.WCF.ServiceProxy.pdb
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Notify\bin\Newtonsoft.Json.xml
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Notify\bin\System.Web.Helpers.xml
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Notify\bin\System.Web.Http.WebHost.xml
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Notify\bin\System.Web.Mvc.xml
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Notify\bin\System.Web.Optimization.xml
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Notify\bin\System.Web.Razor.xml
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Notify\bin\System.Web.WebPages.xml
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Notify\bin\System.Web.WebPages.Deployment.xml
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Notify\bin\System.Web.WebPages.Razor.xml
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Notify\bin\Antlr3.Runtime.pdb
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Notify\obj\Debug\Flotilla.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Notify\obj\Debug\Central.dll
+C:\Users\user\Desktop\FLOTILLAS\Flotilla Bueno\Flotilla Back\Notify\obj\Debug\Central.pdb
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Notify\bin\Central.dll.config
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Notify\bin\Central.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Notify\bin\Central.pdb
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Notify\bin\Antlr3.Runtime.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Notify\bin\Business.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Notify\bin\DataAccess.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Notify\bin\Entity.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Notify\bin\EntityFramework.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Notify\bin\EntityFramework.SqlServer.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Notify\bin\EyeCatch.WCF.ServiceProxy.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Notify\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Notify\bin\Newtonsoft.Json.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Notify\bin\System.Web.Helpers.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Notify\bin\System.Web.Http.WebHost.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Notify\bin\System.Web.Mvc.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Notify\bin\System.Web.Optimization.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Notify\bin\System.Web.Razor.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Notify\bin\System.Web.WebPages.Deployment.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Notify\bin\System.Web.WebPages.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Notify\bin\System.Web.WebPages.Razor.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Notify\bin\WebGrease.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Notify\bin\Business.pdb
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Notify\bin\DataAccess.pdb
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Notify\bin\Entity.pdb
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Notify\bin\EntityFramework.xml
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Notify\bin\EntityFramework.SqlServer.xml
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Notify\bin\EyeCatch.WCF.ServiceProxy.pdb
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Notify\bin\Newtonsoft.Json.xml
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Notify\bin\System.Web.Helpers.xml
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Notify\bin\System.Web.Http.WebHost.xml
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Notify\bin\System.Web.Mvc.xml
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Notify\bin\System.Web.Optimization.xml
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Notify\bin\System.Web.Razor.xml
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Notify\bin\System.Web.WebPages.xml
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Notify\bin\System.Web.WebPages.Deployment.xml
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Notify\bin\System.Web.WebPages.Razor.xml
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Notify\bin\Antlr3.Runtime.pdb
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Notify\obj\Debug\Flotilla.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Notify\obj\Debug\Central.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Notify\obj\Debug\Central.pdb
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Notify\bin\Central.dll.config
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Notify\bin\Central.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Notify\bin\Central.pdb
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Notify\bin\Antlr3.Runtime.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Notify\bin\Business.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Notify\bin\DataAccess.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Notify\bin\Entity.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Notify\bin\EntityFramework.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Notify\bin\EntityFramework.SqlServer.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Notify\bin\EyeCatch.WCF.ServiceProxy.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Notify\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Notify\bin\Newtonsoft.Json.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Notify\bin\System.Web.Helpers.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Notify\bin\System.Web.Http.WebHost.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Notify\bin\System.Web.Mvc.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Notify\bin\System.Web.Optimization.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Notify\bin\System.Web.Razor.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Notify\bin\System.Web.WebPages.Deployment.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Notify\bin\System.Web.WebPages.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Notify\bin\System.Web.WebPages.Razor.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Notify\bin\WebGrease.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Notify\bin\Business.pdb
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Notify\bin\DataAccess.pdb
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Notify\bin\Entity.pdb
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Notify\bin\EntityFramework.xml
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Notify\bin\EntityFramework.SqlServer.xml
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Notify\bin\EyeCatch.WCF.ServiceProxy.pdb
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Notify\bin\Newtonsoft.Json.xml
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Notify\bin\System.Web.Helpers.xml
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Notify\bin\System.Web.Http.WebHost.xml
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Notify\bin\System.Web.Mvc.xml
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Notify\bin\System.Web.Optimization.xml
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Notify\bin\System.Web.Razor.xml
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Notify\bin\System.Web.WebPages.xml
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Notify\bin\System.Web.WebPages.Deployment.xml
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Notify\bin\System.Web.WebPages.Razor.xml
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Notify\bin\Antlr3.Runtime.pdb
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Notify\obj\Debug\Flotilla.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Notify\obj\Debug\Central.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotillas doooos\Flotilla Back\Notify\obj\Debug\Central.pdb
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Notify\bin\Central.dll.config
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Notify\bin\Central.dll
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Notify\bin\Central.pdb
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Notify\bin\Antlr3.Runtime.dll
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Notify\bin\Business.dll
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Notify\bin\DataAccess.dll
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Notify\bin\Entity.dll
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Notify\bin\EntityFramework.dll
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Notify\bin\EntityFramework.SqlServer.dll
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Notify\bin\EyeCatch.WCF.ServiceProxy.dll
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Notify\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Notify\bin\Newtonsoft.Json.dll
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Notify\bin\System.Web.Helpers.dll
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Notify\bin\System.Web.Http.WebHost.dll
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Notify\bin\System.Web.Mvc.dll
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Notify\bin\System.Web.Optimization.dll
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Notify\bin\System.Web.Razor.dll
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Notify\bin\System.Web.WebPages.Deployment.dll
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Notify\bin\System.Web.WebPages.dll
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Notify\bin\System.Web.WebPages.Razor.dll
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Notify\bin\WebGrease.dll
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Notify\bin\Business.pdb
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Notify\bin\DataAccess.pdb
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Notify\bin\Entity.pdb
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Notify\bin\EntityFramework.xml
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Notify\bin\EntityFramework.SqlServer.xml
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Notify\bin\EyeCatch.WCF.ServiceProxy.pdb
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Notify\bin\Newtonsoft.Json.xml
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Notify\bin\System.Web.Helpers.xml
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Notify\bin\System.Web.Http.WebHost.xml
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Notify\bin\System.Web.Mvc.xml
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Notify\bin\System.Web.Optimization.xml
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Notify\bin\System.Web.Razor.xml
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Notify\bin\System.Web.WebPages.xml
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Notify\bin\System.Web.WebPages.Deployment.xml
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Notify\bin\System.Web.WebPages.Razor.xml
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Notify\bin\Antlr3.Runtime.pdb
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Notify\obj\Debug\Flotilla.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Notify\obj\Debug\Central.dll
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Notify\obj\Debug\Central.pdb
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Notify\bin\Central.dll.config
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Notify\bin\Central.dll
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Notify\bin\Central.pdb
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Notify\bin\Antlr3.Runtime.dll
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Notify\bin\Business.dll
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Notify\bin\DataAccess.dll
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Notify\bin\Entity.dll
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Notify\bin\EntityFramework.dll
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Notify\bin\EntityFramework.SqlServer.dll
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Notify\bin\EyeCatch.WCF.ServiceProxy.dll
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Notify\bin\Microsoft.Web.Infrastructure.dll
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Notify\bin\Newtonsoft.Json.dll
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Notify\bin\System.Web.Helpers.dll
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Notify\bin\System.Web.Http.WebHost.dll
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Notify\bin\System.Web.Mvc.dll
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Notify\bin\System.Web.Optimization.dll
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Notify\bin\System.Web.Razor.dll
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Notify\bin\System.Web.WebPages.Deployment.dll
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Notify\bin\System.Web.WebPages.dll
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Notify\bin\System.Web.WebPages.Razor.dll
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Notify\bin\WebGrease.dll
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Notify\bin\Business.pdb
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Notify\bin\DataAccess.pdb
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Notify\bin\Entity.pdb
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Notify\bin\EntityFramework.xml
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Notify\bin\EntityFramework.SqlServer.xml
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Notify\bin\EyeCatch.WCF.ServiceProxy.pdb
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Notify\bin\Newtonsoft.Json.xml
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Notify\bin\System.Web.Helpers.xml
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Notify\bin\System.Web.Http.WebHost.xml
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Notify\bin\System.Web.Mvc.xml
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Notify\bin\System.Web.Optimization.xml
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Notify\bin\System.Web.Razor.xml
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Notify\bin\System.Web.WebPages.xml
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Notify\bin\System.Web.WebPages.Deployment.xml
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Notify\bin\System.Web.WebPages.Razor.xml
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Notify\bin\Antlr3.Runtime.pdb
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Notify\obj\Debug\Flotilla.csprojResolveAssemblyReference.cache
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Notify\obj\Debug\Central.dll
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Notify\obj\Debug\Central.pdb
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Notify\bin\Central.dll.config
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Notify\bin\Central.dll
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Notify\bin\Central.pdb
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Notify\bin\Antlr3.Runtime.dll
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Notify\bin\Business.dll
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Notify\bin\DataAccess.dll
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Notify\bin\Entity.dll
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Notify\bin\EntityFramework.dll
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Notify\bin\EntityFramework.SqlServer.dll
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Notify\bin\EyeCatch.WCF.ServiceProxy.dll
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Notify\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Notify\bin\Newtonsoft.Json.dll
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Notify\bin\System.Web.Helpers.dll
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Notify\bin\System.Web.Http.WebHost.dll
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Notify\bin\System.Web.Mvc.dll
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Notify\bin\System.Web.Optimization.dll
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Notify\bin\System.Web.Razor.dll
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Notify\bin\System.Web.WebPages.Deployment.dll
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Notify\bin\System.Web.WebPages.dll
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Notify\bin\System.Web.WebPages.Razor.dll
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Notify\bin\WebGrease.dll
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Notify\bin\Business.pdb
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Notify\bin\Business.dll.config
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Notify\bin\DataAccess.pdb
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Notify\bin\DataAccess.dll.config
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Notify\bin\Entity.pdb
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Notify\bin\EntityFramework.xml
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Notify\bin\EntityFramework.SqlServer.xml
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Notify\bin\EyeCatch.WCF.ServiceProxy.pdb
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Notify\bin\Newtonsoft.Json.xml
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Notify\bin\System.Web.Helpers.xml
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Notify\bin\System.Web.Http.WebHost.xml
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Notify\bin\System.Web.Mvc.xml
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Notify\bin\System.Web.Optimization.xml
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Notify\bin\System.Web.Razor.xml
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Notify\bin\System.Web.WebPages.xml
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Notify\bin\System.Web.WebPages.Deployment.xml
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Notify\bin\System.Web.WebPages.Razor.xml
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Notify\bin\Antlr3.Runtime.pdb
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Notify\obj\Debug\Flotilla.csprojResolveAssemblyReference.cache
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Notify\obj\Debug\Flotilla.csproj.CoreCompileInputs.cache
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Notify\obj\Debug\Central.dll
+C:\Users\josee\OneDrive\Documentos\Andrade\Escritorio\Flotilla Back\Notify\obj\Debug\Central.pdb

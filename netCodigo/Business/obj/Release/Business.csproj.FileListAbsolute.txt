@@ -1,0 +1,83 @@
+C:\Desarrollo\Flotilla\Business\obj\Release\Business.csprojResolveAssemblyReference.cache
+C:\Desarrollo\Flotilla Back\Business\bin\Release\Business.dll.config
+C:\Desarrollo\Flotilla Back\Business\bin\Release\Business.dll
+C:\Desarrollo\Flotilla Back\Business\bin\Release\Business.XmlSerializers.dll
+C:\Desarrollo\Flotilla Back\Business\bin\Release\Business.pdb
+C:\Desarrollo\Flotilla Back\Business\bin\Release\DataAccess.dll
+C:\Desarrollo\Flotilla Back\Business\bin\Release\Entity.dll
+C:\Desarrollo\Flotilla Back\Business\bin\Release\EntityFramework.dll
+C:\Desarrollo\Flotilla Back\Business\bin\Release\EntityFramework.SqlServer.dll
+C:\Desarrollo\Flotilla Back\Business\bin\Release\DataAccess.pdb
+C:\Desarrollo\Flotilla Back\Business\bin\Release\Entity.pdb
+C:\Desarrollo\Flotilla Back\Business\bin\Release\EntityFramework.xml
+C:\Desarrollo\Flotilla Back\Business\bin\Release\EntityFramework.SqlServer.xml
+C:\Desarrollo\Flotilla Back\Business\obj\Release\Business.csprojResolveAssemblyReference.cache
+C:\Desarrollo\Flotilla Back\Business\obj\Release\Business.dll
+C:\Desarrollo\Flotilla Back\Business\obj\Release\Business.pdb
+C:\Desarrollo\Flotilla Back\Business\obj\Release\Business.XmlSerializers.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Business\bin\Release\Business.dll.config
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Business\bin\Release\Business.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Business\bin\Release\Business.XmlSerializers.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Business\bin\Release\Business.pdb
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Business\bin\Release\DataAccess.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Business\bin\Release\Entity.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Business\bin\Release\EntityFramework.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Business\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Business\bin\Release\Symitar.Api.SoapClient.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Business\bin\Release\System.Net.Http.Formatting.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Business\bin\Release\System.Web.Http.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Business\bin\Release\Newtonsoft.Json.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Business\bin\Release\DataAccess.pdb
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Business\bin\Release\Entity.pdb
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Business\bin\Release\EntityFramework.xml
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Business\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Business\bin\Release\System.Net.Http.Formatting.xml
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Business\bin\Release\System.Web.Http.xml
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Business\obj\Release\Business.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Business\obj\Release\Business.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Business\obj\Release\Business.pdb
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Business\obj\Release\Business.XmlSerializers.dll
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Business\bin\Release\Business.dll.config
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Business\bin\Release\Business.dll
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Business\bin\Release\Business.XmlSerializers.dll
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Business\bin\Release\Business.pdb
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Business\bin\Release\DataAccess.dll
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Business\bin\Release\Entity.dll
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Business\bin\Release\EntityFramework.dll
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Business\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Business\bin\Release\Symitar.Api.SoapClient.dll
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Business\bin\Release\System.Net.Http.Formatting.dll
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Business\bin\Release\System.Web.Http.dll
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Business\bin\Release\Newtonsoft.Json.dll
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Business\bin\Release\DataAccess.pdb
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Business\bin\Release\Entity.pdb
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Business\bin\Release\EntityFramework.xml
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Business\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Business\bin\Release\System.Net.Http.Formatting.xml
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Business\bin\Release\System.Web.Http.xml
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Business\obj\Release\Business.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Business\obj\Release\Business.dll
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Business\obj\Release\Business.pdb
+C:\Users\user\Desktop\FLOTILLAS\FLOTLLAS EL BUENO\Flotillas doooos\Flotilla Back\Business\obj\Release\Business.XmlSerializers.dll
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Business\bin\Release\Business.dll.config
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Business\bin\Release\Business.dll
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Business\bin\Release\Business.XmlSerializers.dll
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Business\bin\Release\Business.pdb
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Business\bin\Release\DataAccess.dll
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Business\bin\Release\Entity.dll
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Business\bin\Release\EntityFramework.dll
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Business\bin\Release\EntityFramework.SqlServer.dll
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Business\bin\Release\Symitar.Api.SoapClient.dll
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Business\bin\Release\System.Net.Http.Formatting.dll
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Business\bin\Release\System.Web.Http.dll
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Business\bin\Release\Newtonsoft.Json.dll
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Business\bin\Release\DataAccess.pdb
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Business\bin\Release\Entity.pdb
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Business\bin\Release\EntityFramework.xml
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Business\bin\Release\EntityFramework.SqlServer.xml
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Business\bin\Release\System.Net.Http.Formatting.xml
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Business\bin\Release\System.Web.Http.xml
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Business\obj\Release\Business.csprojResolveAssemblyReference.cache
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Business\obj\Release\Business.dll
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Business\obj\Release\Business.pdb
+C:\flotillaCartaFactura\FlotillasBack\Flotilla Back\Business\obj\Release\Business.XmlSerializers.dll

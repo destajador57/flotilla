@@ -1,0 +1,10 @@
+C:\Desarrollo\Flotilla\Entity\bin\Release\Entity.dll
+C:\Desarrollo\Flotilla\Entity\bin\Release\Entity.pdb
+C:\Desarrollo\Flotilla\Entity\obj\Release\Entity.csprojResolveAssemblyReference.cache
+C:\Desarrollo\Flotilla\Entity\obj\Release\Entity.dll
+C:\Desarrollo\Flotilla\Entity\obj\Release\Entity.pdb
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Entity\bin\Release\Entity.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Entity\bin\Release\Entity.pdb
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Entity\obj\Release\Entity.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Entity\obj\Release\Entity.dll
+C:\Users\user\Desktop\FLOTILLAS\por favor\Flotilla Back\Entity\obj\Release\Entity.pdb
