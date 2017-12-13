@@ -7,8 +7,7 @@ var Workers = function(config){
 	config = config || {}
 
 	
-	console.log('Inicia conexión:');
-	console.log(conf);
+	console.log('Inicia conexión');
 
 	var app = new expressServer({connection: conf.connectionString});
 
