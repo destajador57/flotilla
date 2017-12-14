@@ -625,6 +625,45 @@
                     </div>
                 </form>
             </div>
+
+
+
+
+
+
+            <!--la 4ta parte de la evidencia-->
+            <div id="evidApp" class="container-fluid" ng-show="currentNode.idFase == 4">
+                <h4 align="center">Evidencia App <span class="label label-default">4</span></h4>
+                <hr>
+                <form class="form-horizontal">
+                    <div class="form-group">
+                            <div ng-show="listaDocumentos[54].permiso == 1">
+                                    <label for="verificacion" class="control-label col-sm-2">Evidecia APP: </label>
+                                    <div class="col-md-2">
+                                        <input type="text" id="txtVerificacion" ng-model="listaDocumentos[54].valor" class="form-control" disabled/>
+                                        <div class="loader">
+                                            <div class="showCtrl" id="loader1"><img src="image/gif/arrows.gif" class="gifLoader"></div>
+                                            <div id="ready1"><span class="glyphicon glyphicon-ok ready" data-toggle="popover" data-original-title="{{listaDocumentos[54].accion}}" data-content="{{listaDocumentos[54].nombreUsuario}} el {{listaDocumentos[54].fechaMod | date:'MM/dd/yyyy hh:mm:ss'}}" ng-hide="listaDocumentos[54].accion == null"></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <button type="button" class="btn btn-default" ng-click="Cargar(listaDocumentos[54].idDocumento)">
+                                            <span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span>
+                                        </button>
+                                        <button id="btnDoc55" type="button" ng-class="{ 'oculto': listaDocumentos[54].valor == ''}" class="btn btn-default" ng-click="showModal(listaDocumentos[54].idDocumento)">
+                                            <span class="glyphicon glyphicon-file" aria-hidden="true"></span>
+                                        </button>
+                                        <div class="alignArrow">
+                                            <div class="showCtrl" id="loader1"><img src="image/gif/arrows.gif" class="gifLoader"></div>
+                                            <div id="ready1"><span class="glyphicon glyphicon-ok ready" data-toggle="popover" data-original-title="{{listaDocumentos[54].accion}}" data-content="{{listaDocumentos[54].nombreUsuario}} el {{listaDocumentos[54].fechaMod | date:'MM/dd/yyyy hh:mm:ss'}}" ng-hide="listaDocumentos[54].accion == null"></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                    </div>
+                </form>
+            </div>
+
+
         </section>
         <!--Modal Accesorios-->
         <div class="modal fade" tabindex="-1" id="viewAccesorio">
